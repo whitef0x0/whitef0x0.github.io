@@ -75,13 +75,28 @@ $(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html,body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top - $('#main-nav').height()
         }, 400);
         return false;
       }
     }
   });
+
+  // affix the navbar, and
+  // fix the width when resized
+  $(window).resize(fixNavWidth);
+  fixNavWidth();
 });
+
+function fixNavWidth() {
+  $('nav').affix({
+    offset: {
+      top: $('nav').offset().top
+    }
+  });
+  $('section#faq').css('margin-top', $('#main-nav').height() + "px")
+  $('#main-nav').width($('#main-container').outerWidth());
+}
 
 function validateEmail(email) {
   // jk I typed it out
