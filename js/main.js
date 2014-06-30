@@ -74,9 +74,13 @@ $(function() {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
-        $('.navbar-toggle').click();
+        if ($('.collapse.navbar-collapse').hasClass('in')) $('.navbar-toggle').click();
+        var offset = 0;
+        if ($('.navbar-header').outerHeight() === 0)
+          offset = $('#main-nav').outerHeight();
+        else offset = $('.navbar-header').outerHeight();
         $('html,body').animate({
-          scrollTop: target.offset().top - getNavHeight()
+          scrollTop: target.offset().top - offset
         }, 400);
         return false;
       }
@@ -100,9 +104,7 @@ function fixNavWidth() {
 }
 
 function getNavHeight() {
-  if ($('.navbar-header').outerHeight() === 0)
-    return $('#main-nav').outerHeight()
-  return $('.navbar-header').outerHeight();
+  return $('#main-nav').height() + $('.navbar-header').height();
 }
 
 function validateEmail(email) {
