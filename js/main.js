@@ -74,8 +74,9 @@ $(function() {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
+        $('.navbar-toggle').click();
         $('html,body').animate({
-          scrollTop: target.offset().top - $('#main-nav').height()
+          scrollTop: target.offset().top - getNavHeight()
         }, 400);
         return false;
       }
@@ -94,8 +95,14 @@ function fixNavWidth() {
       top: $('nav').offset().top
     }
   });
-  $('section#faq').css('margin-top', $('#main-nav').height() + "px")
+  $('section#faq').css('margin-top', getNavHeight() + "px")
   $('#main-nav').width($('#main-container').outerWidth());
+}
+
+function getNavHeight() {
+  if ($('.navbar-header').outerHeight() === 0)
+    return $('#main-nav').outerHeight()
+  return $('.navbar-header').outerHeight();
 }
 
 function validateEmail(email) {
