@@ -8,9 +8,8 @@ $(function() {
   // $('body').scrollTop(0);
 
   // pick a random background
-  bgs = ['yay', 'sleep', 'hallway', 'chrysler', 'ceremony', 'breakout', 'big_house', 'big_house_2'];
-  img = bgs[Math.floor(Math.random() * bgs.length)]
-  $('body').css('background-image', 'url(/img/photos/' + img +'.jpg)')
+  img = Math.floor(Math.random() * 21) + 1
+  $('body').css('background-image', 'url(/img/poly/' + img +'.jpg)')
 
   // set the upload trigger for a keypress
   $("#email-input").keypress(function(e) {
