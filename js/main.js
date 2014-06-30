@@ -8,8 +8,12 @@ $(function() {
   // $('body').scrollTop(0);
 
   // pick a random background
-  img = Math.floor(Math.random() * 21) + 1
-  $('body').css('background-image', 'url(/img/poly/' + img +'.jpg)')
+  var img = Math.floor(Math.random() * 21) + 1;
+  var bg = '/img/poly/' + img +'.jpg';
+  $('<img/>').attr('src', bg).load(function() {
+   $(this).remove(); // prevent memory leaks as @benweet suggested
+   $('body').css('background-image', 'url(' + bg + ')');
+  });
 
   // set the upload trigger for a keypress
   $("#email-input").keypress(function(e) {
