@@ -176,6 +176,7 @@ body p {
 
   .container > nav.affix {
     top: 0;
+    box-shadow: 0 2px 8px black;
   }
 
 .navbar-nav > li > a {
