@@ -13,6 +13,9 @@ $(function() {
   $('<img/>').attr('src', bg).load(function() {
    $(this).remove(); // prevent memory leaks as @benweet suggested
    $('body').css('background-image', 'url(' + bg + ')');
+
+   // start the logo animation
+   runLogoAnimation();
   });
 
   // set the upload trigger for a keypress
@@ -46,31 +49,6 @@ $(function() {
     });
   }
 
-  // The path has been reset, so show the div
-  $('#logo-wrapper').removeClass('invisible');
-  
-  // Drag the elements of the logo in 300ms from load
-  window.setTimeout(function() {
-    $('.logo-animated circle').attr('class', 'grow-animated');
-    // this fixes the circles on firefox
-    if (typeof InstallTrigger !== 'undefined') {
-      $('.logo-animated circle').each(function() {
-        var t = $(this);
-        TweenMax.set(t, 1, {scale: 1, transformOrigin: "50% 50% 0"});
-        TweenMax.to(t, 1, { attr:{ r: t.attr('len') } });
-      });
-    }
-  }, 300);
-
-  // Then, 100ms later, start drawing the lines
-  window.setTimeout(function() {
-    $('.logo-animated path').each(function() {
-      simulatePathDrawing(this, 4.4);
-    });
-    // The border needs to be drawn more quickly
-    simulatePathDrawing($('#logo-outline-path')[0], 3.0);
-  }, 400);
-
   // enable smooth scrolling to anchors
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -95,6 +73,33 @@ $(function() {
   $(window).resize(fixNavWidth);
   fixNavWidth();
 });
+
+function runLogoAnimation() {
+  // The path has been reset, so show the div
+  $('#logo-wrapper').removeClass('invisible');
+  
+  // Drag the elements of the logo in 300ms from load
+  window.setTimeout(function() {
+    $('.logo-animated circle').attr('class', 'grow-animated');
+    // this fixes the circles on firefox
+    if (typeof InstallTrigger !== 'undefined') {
+      $('.logo-animated circle').each(function() {
+        var t = $(this);
+        TweenMax.set(t, 1, {scale: 1, transformOrigin: "50% 50% 0"});
+        TweenMax.to(t, 1, { attr:{ r: t.attr('len') } });
+      });
+    }
+  }, 300);
+
+  // Then, 100ms later, start drawing the lines
+  window.setTimeout(function() {
+    $('.logo-animated path').each(function() {
+      simulatePathDrawing(this, 4.4);
+    });
+    // The border needs to be drawn more quickly
+    simulatePathDrawing($('#logo-outline-path')[0], 3.0);
+  }, 400);
+}
 
 function fixNavWidth() {
   $('nav').affix({
