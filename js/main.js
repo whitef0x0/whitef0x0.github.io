@@ -1,5 +1,8 @@
 // Document ready
 $(function() {
+  // initialize Skrollr
+  S = skrollr.init();
+
   // initialize Parse
   Parse.initialize("ESlRgOz3V1xyLJOsfIHG93enDoVYZZGhNxJe3SXk", "cp2EJqkQMu1Dbv9htMoZ7caQbiqe5AIkYKpRGzW6");
 
