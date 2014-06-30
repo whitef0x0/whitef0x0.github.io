@@ -91,7 +91,7 @@ $(function() {
 
 function setCountdown() {
   $('#countdown-1').text('MHacks IV starts in ' + daysBetween(new Date(), new Date(2014, 8, 5)) + ' days.');
-  $('#countdown-2').text('Registration starts in ' + daysBetween(new Date(), new Date(2014, 6, 1)) + '.');
+  $('#countdown-2').text('Registration starts in ' + daysBetween(new Date(), new Date(2014, 6, 4)) + '.');
 }
 
 function validateEmail(email) {
