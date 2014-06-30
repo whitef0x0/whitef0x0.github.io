@@ -1,13 +1,11 @@
 // Document ready
 $(function() {
-  // initialize Skrollr
-  S = skrollr.init();
 
   // initialize Parse
   Parse.initialize("ESlRgOz3V1xyLJOsfIHG93enDoVYZZGhNxJe3SXk", "cp2EJqkQMu1Dbv9htMoZ7caQbiqe5AIkYKpRGzW6");
 
   // scroll the window back to the top
-  $('body').scrollTop(0);
+  // $('body').scrollTop(0);
 
   // pick a random background
   bgs = ['yay', 'sleep', 'hallway', 'chrysler', 'ceremony', 'breakout', 'big_house', 'big_house_2'];
@@ -69,6 +67,20 @@ $(function() {
     // The border needs to be drawn more quickly
     simulatePathDrawing($('#logo-outline-path')[0], 3.0);
   }, 400);
+
+  // enable smooth scrolling to anchors
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 400);
+        return false;
+      }
+    }
+  });
 });
 
 function validateEmail(email) {
