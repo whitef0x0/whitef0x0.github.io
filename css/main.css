@@ -127,13 +127,38 @@ html, body {
   overflow-y: scroll;
 }
 
-h1, h2, h3, h4, h5, h6, label {
+h1, h2, h3, h4, h5, h6, label, nav {
   font-family: "ostrich-sans-regular", Helvetica, Arial, sans-serif;
   /*line-height: 1.4em;*/
 }
 
 h1 {
   font-size: 96px;
+}
+
+h2 {
+  font-size: 72px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+body p {
+  font-size: 22px;
+}
+
+.container > nav {
+  margin-left: -15px;
+  margin-right: -15px;
+  border-radius: 0;
+  background-color: #191919;
+  border: none;
+}
+
+.navbar-nav > li > a {
+  font-size: 36px;
+  line-height: 36px;
 }
 
 /*#container-wrapper {
@@ -145,7 +170,7 @@ h1 {
 }*/
 
   body > .container {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #272727;
   }
 
 #header-wrapper {
@@ -170,7 +195,7 @@ section {
   padding-right: 48px;
 }
 
-  section h1 {
+  section h2, section h3 {
     border-bottom: 1px solid white;
   }
 
@@ -205,7 +230,7 @@ section {
   }
 
 .logo-animated {
-  position: absolute;
+  /*position: absolute;*/
   width: 100%;
   height: 100%;
 }

@@ -1,5 +1,8 @@
 // Document ready
 $(function() {
+  // initialize Skrollr
+  S = skrollr.init();
+
   // initialize Parse
   Parse.initialize("ESlRgOz3V1xyLJOsfIHG93enDoVYZZGhNxJe3SXk", "cp2EJqkQMu1Dbv9htMoZ7caQbiqe5AIkYKpRGzW6");
 
@@ -10,9 +13,6 @@ $(function() {
   bgs = ['yay', 'sleep', 'hallway', 'chrysler', 'ceremony', 'breakout', 'big_house', 'big_house_2'];
   img = bgs[Math.floor(Math.random() * bgs.length)]
   $('body').css('background-image', 'url(/img/photos/' + img +'.jpg)')
-
-  // initiate the countdown
-  setCountdown();
 
   // set the upload trigger for a keypress
   $("#email-input").keypress(function(e) {
@@ -69,30 +69,7 @@ $(function() {
     // The border needs to be drawn more quickly
     simulatePathDrawing($('#logo-outline-path')[0], 3.0);
   }, 400);
-
-  // you ruined everything, IE
-  window.setTimeout( function() {
-    var greetingHeight = $('#anchor-greeting').height();
-    var wrapperHeight = $('body').height();
-    $('#logo-wrapper').addClass('pushed');
-    if (wrapperHeight > 450) {
-      $('#logo-wrapper').css('height', (wrapperHeight - greetingHeight - 20) + "px");
-    }
-
-    // Firefox ruins everything nice too
-    window.setTimeout(function() {
-      $('body').removeClass('locked');
-    }, 2000);
-    $('#anchor-greeting').removeClass('transparent');
-    // so the page doesn't jump around later...
-    $('#anchor-greeting').css('min-height', $('#anchor-greeting').height());
-  }, 3400);
 });
-
-function setCountdown() {
-  $('#countdown-1').text('MHacks IV starts in ' + daysBetween(new Date(), new Date(2014, 8, 5)) + ' days.');
-  $('#countdown-2').text('Registration starts in ' + daysBetween(new Date(), new Date(2014, 6, 4)) + '.');
-}
 
 function validateEmail(email) {
   // jk I typed it out
