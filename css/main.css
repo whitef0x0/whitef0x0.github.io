@@ -159,6 +159,14 @@ body p {
   background-color: #191919;
   border: none;
 }
+  
+  .container > nav.affix-top {
+    position: absolute;
+  }
+
+  .container > nav.affix {
+    top: 0;
+  }
 
 .navbar-nav > li > a {
   font-size: 36px;
