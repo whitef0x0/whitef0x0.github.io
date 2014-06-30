@@ -12,7 +12,7 @@ $(function() {
   var bg = '/img/poly/' + img +'.jpg';
   $('<img/>').attr('src', bg).load(function() {
    $(this).remove(); // prevent memory leaks as @benweet suggested
-   $('body').css('background-image', 'url(' + bg + ')');
+   $('#background-wrapper').css('background-image', 'url(' + bg + ')');
 
    // start the logo animation
    runLogoAnimation();
@@ -80,6 +80,7 @@ function runLogoAnimation() {
   
   // Drag the elements of the logo in 300ms from load
   window.setTimeout(function() {
+    $('#background-wrapper').removeClass('transparent');
     $('.logo-animated circle').attr('class', 'grow-animated');
     // this fixes the circles on firefox
     if (typeof InstallTrigger !== 'undefined') {
