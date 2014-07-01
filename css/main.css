@@ -258,8 +258,18 @@ section {
     padding: 0;
   }
 
+  #row-equal {
+    display: table;
+  }
+
+  #row-equal .panel {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+  }
+
   section#stats h1 {
-    font-size: 10vmax;
+    font-size: 9vmax;
     margin: 0px;
   }
   section#stats h2 {
@@ -284,8 +294,7 @@ section {
 
   section#stats #stats-block-2 {
     background-color: #410099;
-    padding-top: 3%;
-    padding-bottom: 10%
+    padding: 3%;
   }
 
 
