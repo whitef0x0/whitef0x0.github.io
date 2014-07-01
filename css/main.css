@@ -258,13 +258,45 @@ section {
     padding: 0;
   }
 
+  #row-equal {
+    display: table;
+  }
+
+  #row-equal .panel {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  section#stats h1 {
+    font-size: 9vmax;
+    margin: 0px;
+  }
+  section#stats h2 {
+    font-size: 12vmax;
+  }
+
   section#stats #stats-block-1 {
     background-color: #ffc800;
+    padding-top: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+  }
+
+  section#stats #stats-block-1 h1 {
+    display: inline;
+  }
+
+  section#stats #stats-block-1 h2 {
+    display: inline;
+    border: none;
   }
 
   section#stats #stats-block-2 {
     background-color: #410099;
+    padding: 3%;
   }
+
 
 .logo-animated {
   /*position: absolute;*/
