@@ -258,13 +258,36 @@ section {
     padding: 0;
   }
 
+  section#stats h1 {
+    font-size: 10vmax;
+    margin: 0px;
+  }
+  section#stats h2 {
+    font-size: 12vmax;
+  }
+
   section#stats #stats-block-1 {
     background-color: #ffc800;
+    padding-top: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+  }
+
+  section#stats #stats-block-1 h1 {
+    display: inline;
+  }
+
+  section#stats #stats-block-1 h2 {
+    display: inline;
+    border: none;
   }
 
   section#stats #stats-block-2 {
     background-color: #410099;
+    padding-top: 3%;
+    padding-bottom: 10%
   }
+
 
 .logo-animated {
   /*position: absolute;*/
