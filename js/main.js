@@ -1,6 +1,12 @@
 // Document ready
 $(function() {
 
+  // Set a timeout...
+    setTimeout(function(){
+        // Hide the address bar!
+        window.scrollTo(0, 1);
+    }, 0);
+
   // initialize Parse
   Parse.initialize("ESlRgOz3V1xyLJOsfIHG93enDoVYZZGhNxJe3SXk", "cp2EJqkQMu1Dbv9htMoZ7caQbiqe5AIkYKpRGzW6");
 
@@ -58,6 +64,8 @@ $(function() {
   // fix the width when resized
   $(window).resize(fixNavWidth);
   fixNavWidth();
+  // so the page doesn't jump around later...
+  $('#logo-wrapper').css('min-height', $('#anchor-greeting').height());
 
   // pick a random background
   var img = Math.floor(Math.random() * 21) + 1;
@@ -67,6 +75,9 @@ $(function() {
     $('body').css('background-image', 'url(' + bg + ')');
     $('#main-container').removeClass('transparent');
     $('#loading-curtain').addClass('transparent');
+    setTimeout(function() {
+      // $('#loading-curtain').css('display', 'none');
+    }, 650);
 
     // The path has been reset, so show the div
     $('#logo-wrapper').removeClass('invisible');
@@ -74,6 +85,10 @@ $(function() {
     runLogoAnimation(1000);
     });
 });
+
+
+// FOO
+
 
 function runLogoAnimation(delay) {
   // Drag the elements of the logo in 300ms from load
@@ -101,6 +116,7 @@ function runLogoAnimation(delay) {
 }
 
 function fixNavWidth() {
+  // $('body').css('height', $('#fixed-footer').offset().top - $('#fixed-header').offset().top);
   $('nav').affix({
     offset: {
       top: function() { return $('#main-container').offset().top }
