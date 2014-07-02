@@ -238,7 +238,6 @@ body p {
   margin: auto;
   display: block;
   padding: 0;
-  text-align: center;
 }
 
 #fixed-header {
@@ -464,17 +463,17 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 2px;
   box-shadow: none;
-  font-family: "ostrich-sans-black", Helvetica, Arial, sans-serif;
+  font-family: "denseregular", Helvetica, Arial, sans-serif;
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
 }
 
 .btn {
-  font-family: "ostrich-sans-black", Helvetica, Arial, sans-serif;
+  font-family: "denseregular", Helvetica, Arial, sans-serif;
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0px;
-  font-size: 15px;
-  font-weight: normal;
+  font-size: 32px;
+  font-weight: bolder;
   line-height: 1.42857;
   text-align: center;
   white-space: nowrap;
@@ -482,8 +481,8 @@ section {
   cursor: pointer;
   -moz-user-select: none;
   background-image: none;
-  color: #DDD;
-  background-color: rgba(255, 255, 255, 0.28);
+  color: white;
+  background-color: #FED136;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 2px
 }
