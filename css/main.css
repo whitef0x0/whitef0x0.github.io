@@ -155,7 +155,7 @@ body p {
 
 #loading-curtain {
   position: fixed;
-  background-color: black;
+  background-color: #191919;
   top: 0;
   left: 0;
   bottom: 0;
