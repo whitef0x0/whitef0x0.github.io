@@ -45,12 +45,9 @@ $(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         if ($('.collapse.navbar-collapse').hasClass('in')) $('.navbar-toggle').click();
-        var offset = 0;
-        if ($('.navbar-header').outerHeight() === 0)
-          offset = $('#main-nav').outerHeight();
-        else offset = $('.navbar-header').outerHeight();
+        
         $('html,body').animate({
-          scrollTop: target.offset().top - offset
+          scrollTop: target.offset().top - getNavOffset()
         }, 400);
         return false;
       }
@@ -106,15 +103,22 @@ function runLogoAnimation(delay) {
 function fixNavWidth() {
   $('nav').affix({
     offset: {
-      top: $('nav').offset().top
+      top: function() { return $('#main-container').offset().top }
     }
   });
-  $('section#faq').css('margin-top', getNavHeight() + "px")
+  var offset = getNavOffset();
+  $('section#faq').css('margin-top', offset + "px")
+  $('#main-container').css('margin-top', "-" + offset + "px");
   $('#main-nav').width($('#main-container').outerWidth());
 }
 
-function getNavHeight() {
-  return $('#main-nav').height() + $('.navbar-header').height();
+function getNavOffset() {
+  // return $('#main-nav').innerHeight() + $('.navbar-header').innerHeight();
+  var offset = 0;
+  if ($('.navbar-header').height() === 0)
+    offset = $('#main-nav').height();
+  else offset = $('.navbar-header').height();
+  return offset;
 }
 
 function validateEmail(email) {
