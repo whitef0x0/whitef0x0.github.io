@@ -5,18 +5,7 @@ $(function() {
   Parse.initialize("ESlRgOz3V1xyLJOsfIHG93enDoVYZZGhNxJe3SXk", "cp2EJqkQMu1Dbv9htMoZ7caQbiqe5AIkYKpRGzW6");
 
   // scroll the window back to the top
-  // $('body').scrollTop(0);
-
-  // pick a random background
-  var img = Math.floor(Math.random() * 21) + 1;
-  var bg = '/img/poly/' + img +'.jpg';
-  $('<img/>').attr('src', bg).load(function() {
-   $(this).remove(); // prevent memory leaks as @benweet suggested
-   $('#background-wrapper').css('background-image', 'url(' + bg + ')');
-
-   // start the logo animation
-   runLogoAnimation();
-  });
+  // $('html, body').scrollTop(0);
 
   // set the upload trigger for a keypress
   $("#email-input").keypress(function(e) {
@@ -72,12 +61,24 @@ $(function() {
   // fix the width when resized
   $(window).resize(fixNavWidth);
   fixNavWidth();
+
+  // pick a random background
+  var img = Math.floor(Math.random() * 21) + 1;
+  var bg = '/img/poly/' + img +'.jpg';
+  $('<img/>').attr('src', bg).load(function() {
+    $(this).remove(); // prevent memory leaks as @benweet suggested
+    $('body').css('background-image', 'url(' + bg + ')');
+    $('#main-container').removeClass('transparent');
+    $('#loading-curtain').addClass('transparent');
+
+    // The path has been reset, so show the div
+    $('#logo-wrapper').removeClass('invisible');
+    // start the logo animation in 500ms
+    runLogoAnimation(1000);
+    });
 });
 
-function runLogoAnimation() {
-  // The path has been reset, so show the div
-  $('#logo-wrapper').removeClass('invisible');
-  
+function runLogoAnimation(delay) {
   // Drag the elements of the logo in 300ms from load
   window.setTimeout(function() {
     $('#background-wrapper').removeClass('transparent');
@@ -90,7 +91,7 @@ function runLogoAnimation() {
         TweenMax.to(t, 1, { attr:{ r: t.attr('len') } });
       });
     }
-  }, 300);
+  }, 300 + delay);
 
   // Then, 100ms later, start drawing the lines
   window.setTimeout(function() {
@@ -99,7 +100,7 @@ function runLogoAnimation() {
     });
     // The border needs to be drawn more quickly
     simulatePathDrawing($('#logo-outline-path')[0], 3.0);
-  }, 400);
+  }, 400 + delay);
 }
 
 function fixNavWidth() {
