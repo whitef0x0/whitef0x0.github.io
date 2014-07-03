@@ -411,6 +411,7 @@ section {
 }
 
 .faq-rolled {
+  margin-top: -60px;
   max-height: 0 !important;
 }
 
