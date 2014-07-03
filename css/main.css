@@ -421,6 +421,13 @@ section {
     .faq-box {
       height: 100px;
     }
+    .faq-box p {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
     .faq-box-left {
       border-right: 2px solid white;
       border-bottom: none !important;
