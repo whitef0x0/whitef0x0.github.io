@@ -32,6 +32,7 @@ Made with love by the MHacks Tech "Do you even hack, bro?" Team
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/lavish-bootstrap.css">
+  <link rel="stylesheet" href="css/typeahead.css">
   <link rel="stylesheet" href="css/main.css">
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -109,7 +110,7 @@ Made with love by the MHacks Tech "Do you even hack, bro?" Team
         <div id="anchor-greeting" class="locked" style="text-align: center; margin-top: -1vh;">
           <h1 style="margin-top: 1vh; margin-bottom: 1vh; font-size: 10vh;">THE MOST EPIC</h1>
           <h1 style="margin-top: 1vh; margin-bottom: 1vh; font-size: 10vh;">HACKATHON. EVER.</h1>
-          <a href="#stats" class="btn btn-default smoothed colorified" style="margin: auto; margin-top: 1vh;">APPLY</a>
+          <a href="#apply" class="btn btn-default smoothed colorified" style="margin: auto; margin-top: 1vh;">APPLY</a>
         </div>
       </div>
       <div id="main-container" class="container transparent fade-animated" style="margin-top: -66px;">
@@ -243,6 +244,110 @@ Made with love by the MHacks Tech "Do you even hack, bro?" Team
             </div>
           </div>
         </section>
+        <section id="apply">
+          <form class="form-horizontal">
+            <fieldset>
+
+              <!-- Form Name -->
+              <legend>Apply</legend>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-5 col-md-offset-1 control-label" for="name">Your Name</label>  
+                <div class="col-md-5">
+                <input id="name" name="name" type="text" placeholder="Student Hacker" class="form-control input-md" required="">
+                  
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-5 col-md-offset-1 control-label" for="email">Your Email</label>  
+                <div class="col-md-5">
+                <input id="email" name="email" type="text" placeholder="you@school.edu" class="form-control input-md" required="">
+                <span class="help-block">Use your .edu email address, if possible.</span>  
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-5 col-md-offset-1 control-label" for="school">Your School</label>  
+                <div class="col-md-5">
+                <input id="school" name="school" type="text" placeholder="University" class="form-control input-md" required="">
+                  
+                </div>
+              </div>
+
+              <!-- Multiple Radios (inline) -->
+              <div class="form-group">
+                <label class="col-md-5 col-md-offset-1 control-label" for="experienced_hacker">Have you been to a hackathon before?</label>
+                <div class="col-md-5"> 
+                  <label class="radio-inline" for="experienced_hacker-0">
+                    <input type="radio" name="experienced_hacker" id="experienced_hacker-0" value="true">
+                    Yes
+                  </label> 
+                  <label class="radio-inline" for="experienced_hacker-1">
+                    <input type="radio" name="experienced_hacker" id="experienced_hacker-1" value="false" checked="checked">
+                    No
+                  </label>
+                </div>
+              </div>
+
+              <div id="experienced-form" class="contextual-form hidden fade-animated">
+                <!-- Text input-->
+                <div class="form-group">
+                  <label class="col-md-5 col-md-offset-1 control-label" for="last_hackathon_attended">Which hackathon did you last attend?</label>  
+                  <div class="col-md-5">
+                  <input id="last_hackathon_attended" name="last_hackathon_attended" type="text" placeholder="MHacks Winter 2013" class="form-control input-md">
+                    
+                  </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="form-group">
+                  <label class="col-md-5 col-md-offset-1 control-label" for="experience">Tell us about something you've built and a way you're gonna take a risk and challenge what you can build in 36 hours at MHacks IV.</label>
+                  <div class="col-md-5">                     
+                    <textarea class="form-control" id="experience" name="experience"></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Textarea -->
+              <div id="noob-form" class="contextual-form form-group fade-animated">
+                <label class="col-md-5 col-md-offset-1 control-label" for="new_hacker_thoughts">MHacks IV is about taking risks, learning and creating amazing things . How do you want to start your hackathon journey?</label>
+                <div class="col-md-5">                     
+                  <textarea class="form-control" id="new_hacker_thoughts" name="new_hacker_thoughts"></textarea>
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-5 col-md-offset-1 control-label" for="github">Your GitHub</label>  
+                <div class="col-md-5">
+                <input id="github" name="github" type="text" placeholder="@you" class="form-control input-md">
+                <span class="help-block">A link to your profile or your handle are both acceptable.</span>  
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-5 col-md-offset-1 control-label" for="linkedin">Your LinkedIn</label>  
+                <div class="col-md-5">
+                <input id="linkedin" name="linkedin" type="text" placeholder="https://www.linkedin.com/profile/@you" class="form-control input-md">
+                <span class="help-block">A link to your profile is preferred.</span>  
+                </div>
+              </div>
+
+              <!-- Button -->
+              <div class="form-group">
+                <div class="col-md-4 col-md-offset-4">
+                  <button id="submit" type="submit" name="submit" class="btn btn-primary">Let's Go</button>
+                </div>
+              </div>
+
+            </fieldset>
+          </form>
+        </section>
         <section id="social">
           <div class="row" style="height: 40px;">
             <a href="https://www.facebook.com/MHacksHackathon" class="footer-logo social-logo" style="margin-left: -70px; background-image: url(/img/circle_fb.png);"></a>
@@ -265,14 +370,16 @@ Made with love by the MHacks Tech "Do you even hack, bro?" Team
         </section>
       </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js"><\/script>')</script>
 
-    <script src="js/plugins.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/typeahead.bundle.min.js"></script>
+    <script src="js/plugins.js"></script>
     <script src="//www.parsecdn.com/js/parse-1.2.18.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/registration.js"></script>
 
     <!-- Google Analytics-->
     <script>

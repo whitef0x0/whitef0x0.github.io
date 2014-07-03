@@ -30,7 +30,7 @@ $(function() {
     }, 0);
 
   // initialize Parse
-  Parse.initialize("ESlRgOz3V1xyLJOsfIHG93enDoVYZZGhNxJe3SXk", "cp2EJqkQMu1Dbv9htMoZ7caQbiqe5AIkYKpRGzW6");
+  Parse.initialize("RsI9Hn7jETLPOpYv20gfdN6MaIB1MkEsIs26zqih", "ettyekyxh6UtHnColhHgS5vTZ87Dtqw1PsijHiU0");
 
   // scroll the window back to the top
   // $('html, body').scrollTop(0);
@@ -86,7 +86,7 @@ $(function() {
 
   // pick a random background
   var img = Math.floor(Math.random() * 21) + 1;
-  $('.colorified').css('background-color', colors[img-1]);
+  colorify(colors[img-1]);
   var bg = '/img/poly/' + img +'.jpg';
   $('<img/>').attr('src', bg).load(function() {
     $(this).remove(); // prevent memory leaks as @benweet suggested
@@ -102,11 +102,34 @@ $(function() {
     // start the logo animation in 500ms
     runLogoAnimation(1000);
     });
+
+  // initialize the schools list with typeahead
+  var schools = new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.obj.whitespace('foo'),
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    limit: 5,
+    prefetch: {
+      url: '/json/universities.json',
+      filter: function(list) {
+        return $.map(list, function(uni) { return { 'foo': uni }; });
+      }
+    }
+  });
+  schools.initialize();
+  $('#school').typeahead({
+    hint: false
+  }, {
+    displayKey: String,
+    source: schools.ttAdapter()
+  });
 });
 
 
 // FOO
 
+function colorify(color) {
+  $('.colorified').css('background-color', color);
+}
 
 function runLogoAnimation(delay) {
   // Drag the elements of the logo in 300ms from load
