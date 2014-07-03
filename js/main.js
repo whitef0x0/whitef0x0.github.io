@@ -105,13 +105,13 @@ $(function() {
 
   // initialize the schools list with typeahead
   var schools = new Bloodhound({
-    datumTokenizer: Bloodhound.tokenizers.obj.whitespace('foo'),
+    datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     limit: 5,
     prefetch: {
       url: '/json/universities.json',
       filter: function(list) {
-        return $.map(list, function(uni) { return { 'foo': uni }; });
+        return $.map(list, function(uni) { return { name: uni }; });
       }
     }
   });
@@ -119,7 +119,7 @@ $(function() {
   $('#school').typeahead({
     hint: false
   }, {
-    displayKey: String,
+    displayKey: 'name',
     source: schools.ttAdapter()
   });
 });
