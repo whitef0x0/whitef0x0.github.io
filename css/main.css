@@ -141,12 +141,21 @@ h1 {
   font-size: 85px;
 }
 
-h2 {
+h2, legend {
   font-size: 70px;
+}
+
+legend {
+  border-bottom: none !important;
 }
 
 h3 {
   font-size: 52px;
+}
+
+.form-group * {
+  font-family: 'Roboto';
+  font-weight: 100;
 }
 
 body p {
@@ -542,12 +551,12 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 2px;
   box-shadow: none;
-  font-family: "denseregular", Helvetica, Arial, sans-serif;
+  /*font-family: "denseregular", Helvetica, Arial, sans-serif;*/
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
 }
 
 .btn {
-  font-family: "denseregular", Helvetica, Arial, sans-serif;
+  /*font-family: "denseregular", Helvetica, Arial, sans-serif;*/
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0px;
