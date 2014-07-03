@@ -30,7 +30,7 @@ $(function() {
     }, 0);
 
   // initialize Parse
-  Parse.initialize("ESlRgOz3V1xyLJOsfIHG93enDoVYZZGhNxJe3SXk", "cp2EJqkQMu1Dbv9htMoZ7caQbiqe5AIkYKpRGzW6");
+  Parse.initialize("RsI9Hn7jETLPOpYv20gfdN6MaIB1MkEsIs26zqih", "ettyekyxh6UtHnColhHgS5vTZ87Dtqw1PsijHiU0");
 
   // scroll the window back to the top
   // $('html, body').scrollTop(0);
