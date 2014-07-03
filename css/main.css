@@ -415,19 +415,30 @@ section {
   max-height: 0 !important;
 }
 
-.faq-box {
-  height: 100px;
-}
+  @media(min-width: 992px) {
+    .faq-box {
+      height: 100px;
+    }
+    .faq-box-left {
+      border-right: 2px solid white;
+      border-bottom: none !important;
+      text-align: right;
+    }
+    .faq-box-right {
+      border-left: 2px solid white;
+      text-align: left;
+    }
+  }
 
   .faq-box-left {
-    border-right: 2px solid white;
-    text-align: right;
+    border-bottom: 2px solid white;
   }
 
   .faq-box-right {
-    border-left: 2px solid white;
-    text-align: left;
   }
+  
+
+  
 
 /* None of these are really that important... */
 /* I think Buddha would agree. */
