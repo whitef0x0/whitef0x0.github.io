@@ -150,7 +150,8 @@ h3 {
 }
 
 body p {
-  font-size: 32px;
+  font-family: 'Roboto';
+  font-size: 18px;
 }
 
 #loading-curtain {
