@@ -262,7 +262,7 @@ section {
 }
 
   section h2, section h3 {
-    border-bottom: 1px solid white;
+    /*border-bottom: 1px solid white;*/
   }
 
   section > .row {
@@ -398,6 +398,37 @@ section {
 
 }
 
+/* New stuff */
+
+#faq-pane {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  overflow: hidden;
+  max-height: 9000px;
+  box-shadow: inset 0 2px 8px black;
+}
+
+.faq-rolled {
+  margin-top: -60px;
+  max-height: 0 !important;
+}
+
+.faq-box {
+  height: 100px;
+}
+
+  .faq-box-left {
+    border-right: 2px solid white;
+    text-align: right;
+  }
+
+  .faq-box-right {
+    border-left: 2px solid white;
+    text-align: left;
+  }
+
 /* None of these are really that important... */
 /* I think Buddha would agree. */
 
@@ -447,6 +478,14 @@ section {
   -moz-transition: opacity 0.65s ease-in-out !important;
   -o-transition: opacity 0.65s ease-in-out !important;
   -ms-transition: opacity 0.65s ease-in-out !important;
+}
+
+.slide-animated {
+  transition: all 0.65s ease-in-out !important;
+  -webkit-transition: all 0.65s ease-in-out !important;
+  -moz-transition: all 0.65s ease-in-out !important;
+  -o-transition: all 0.65s ease-in-out !important;
+  -ms-transition: all 0.65s ease-in-out !important;
 }
 
 /* Override all the things */

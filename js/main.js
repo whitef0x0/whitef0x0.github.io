@@ -35,16 +35,11 @@ $(function() {
   // scroll the window back to the top
   // $('html, body').scrollTop(0);
 
-  // set the upload trigger for a keypress
-  $("#email-input").keypress(function(e) {
-    if (e.keyCode == 13) {
-      submitEmail();
-      e.preventDefault();
-    }
-  });
-
   // set the upload trigger on the button
-  $("#email-button").on('click', submitEmail);
+  $("#faq-see-more").on('click', function(e) {
+    $('#faq-pane').toggleClass('faq-rolled');
+    e.preventDefault();
+  });
 
   // Reset the logo for drawing
   $('.logo-animated path').each(function() {
