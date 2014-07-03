@@ -126,7 +126,7 @@ html, body {
 body {
   /*background-image: url(/img/photos/big_house.jpg);*/
   background-attachment: fixed; 
-  background-size: inherit;
+  background-size: cover;
   background-repeat: repeat;
   overflow: visible;
   z-index: 200;
