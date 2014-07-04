@@ -43,9 +43,9 @@ $(function() {
       type: "faq-see-more",
       href: "#"
     });
+    $('#faq-pane').css('max-height', '1900px');
     viewportUnitsBuggyfill.refresh();
     e.preventDefault();
-    $('#faq-pane').css('max-height', '1900px');
   });
 
   // Reset the logo for drawing
