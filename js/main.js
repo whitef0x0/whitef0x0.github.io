@@ -38,6 +38,11 @@ $(function() {
   // set the upload trigger on the button
   $("#faq-see-more").on('click', function(e) {
     $('#faq-pane').toggleClass('faq-rolled');
+    mixpanel.track('page_interaction', {
+      referrer: document.referrer,
+      type: "faq-see-more",
+      href: "#"
+    });
     e.preventDefault();
   });
 
