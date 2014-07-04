@@ -250,7 +250,21 @@ mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
                 <label class="col-md-5 col-md-offset-1 control-label" for="school">Your School</label>  
                 <div class="col-md-5">
                 <input id="school" name="school" type="text" placeholder="University" class="form-control input-md" required="">
-                  
+                </div>
+              </div>
+
+              <!-- Multiple Radios (inline) -->
+              <div class="form-group">
+                <label class="col-md-5 col-md-offset-1 control-label" for="gender">Male or female?</label>
+                <div class="col-md-5"> 
+                  <label class="radio-inline" for="gender-0">
+                    <input type="radio" name="gender" id="gender-0" value="male" checked="checked">
+                    Male
+                  </label>
+                  <label class="radio-inline" for="gender-1">
+                    <input type="radio" name="gender" id="gender-1" value="female">
+                    Female
+                  </label>
                 </div>
               </div>
 
