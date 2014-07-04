@@ -365,10 +365,10 @@ mixpanel.init("0f5649e81ddea32d9b240a352c9dfe85");</script><!-- end Mixpanel -->
         <section id="footer">
           <div class="row" style="margin-top: 16px;">
             <div class="col-md-3 col-md-offset-3">
-              <a href="http://mpowered.umich.edu" class=" footer-logo" style="background-image: url(/img/MPoweredLogo-white-padded.png);"></a>
+              <a href="http://mpowered.umich.edu" id="umich-orgs-mpowered" class=" footer-logo" style="background-image: url(/img/MPoweredLogo-white-padded.png);"></a>
             </div>
             <div class="col-md-3">
-              <a href="http://michiganhackers.com" class="footer-logo" style="background-image: url(/img/mhlogo-white.png);"></a>
+              <a href="http://michiganhackers.com" id="umich-orgs-michiganhackers" class="footer-logo" style="background-image: url(/img/mhlogo-white.png);"></a>
             </div>
           </div>
         </section>
@@ -427,7 +427,19 @@ mixpanel.init("0f5649e81ddea32d9b240a352c9dfe85");</script><!-- end Mixpanel -->
     mixpanel.track_links("#social-googleplus", "click social googleplus", {
     "referrer": document.referrer
     });
+    mixpanel.track_links("#umich-orgs-mpowered", "click mpowered", {
+    "referrer": document.referrer
+    });
+    mixpanel.track_links("#umich-orgs-michiganhackers", "click michiganhackers", {
+    "referrer": document.referrer
+    });
+    mixpanel.track_links("#sponsor-email a", "click sponsor-email", {
+    "referrer": document.referrer
+    });
     </script>
     <div id="fixed-footer"></div>
   </body>
 </html>
+mixpanel.track_links("#umich-orgs-michiganhackers", "click michiganhackers", {
+"referrer": document.referrer
+});
