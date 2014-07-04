@@ -310,7 +310,7 @@ body p {
 @media(min-width: 768px) {
   section {
     padding-left: 48px;
-    padding-right: w;
+    padding-right: 48px;
   }
 }
 section {
