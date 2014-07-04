@@ -300,10 +300,20 @@ body p {
   height: 100vh;
 }
 
-section {
-  padding-left: 48px;
-  padding-right: 48px;
+@media(max-width: 768px) {
+  section {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
 
+@media(min-width: 768px) {
+  section {
+    padding-left: 48px;
+    padding-right: w;
+  }
+}
+section {
   margin-bottom: 24px;
 }
 
@@ -367,14 +377,14 @@ section {
 #map-overlay {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 2;
-  padding: 0 20px;
+  padding: 20px 0;
 }
 
-  #map-overlay > .col-md-4 {
+  #map-overlay > div {
     height: 420px;
   }
 
-  #map-overlay > .col-md-4 > div {
+  #map-overlay > div > div {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -446,11 +456,22 @@ section {
 
 /* New stuff */
 
+@media(min-width: 768px) {
+  #faq-pane {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media(max-width: 768px) {
+  #faq-pane {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 #faq-pane {
   margin-left: -20px;
   margin-right: -20px;
-  padding-left: 80px;
-  padding-right: 80px;
   overflow: hidden;
   /*max-height: 1200px;*/
   box-shadow: inset 0 2px 8px black;
@@ -537,7 +558,7 @@ section {
 
 .transparent {
   opacity: 0 !important;
-  z-index: 0 !important;
+  z-index: -1 !important;
 }
 
 .faded {
