@@ -22,7 +22,7 @@ $(function() {
     data.username = data.email;
     console.log(data);
     var user = new Parse.User();
-    user.save(data, {
+    user.signUp(data, {
       success: function(user) {
         window.alert("Thanks for your application! Please check your email to confirm your address.");
         console.log(user);
