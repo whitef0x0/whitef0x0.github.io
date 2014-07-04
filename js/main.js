@@ -95,6 +95,7 @@ $(function() {
 
   // pick a random background
   var img = Math.floor(Math.random() * 21) + 1;
+  COLOR = colors[img-1];
   colorify(colors[img-1]);
   var bg = '/img/poly/' + img +'.jpg';
   $('<img/>').attr('src', bg).load(function() {
@@ -134,7 +135,7 @@ $(function() {
     displayKey: 'foo',
     source: schools.ttAdapter()
   });
-
+  initialize();
   viewportUnitsBuggyfill.refresh();
 });
 
@@ -238,3 +239,39 @@ function simulatePathDrawing(path, duration) {
   path.style.strokeWidth = strokeWidth;
   path.style.fill = fill;
 };
+
+
+
+// GOOGLE MAPS
+function getMapStyle() {
+  return [
+    {
+      stylers: [
+        { hue: COLOR },
+        { saturation: -20 },
+        { lightness: -20 }
+      ]
+    },{
+      featureType: "road",
+      elementType: "labels",
+      stylers: [
+        { visibility: "off" }
+      ]
+    }
+  ];
+}
+
+function initialize() {
+  var mapOptions = {
+    center: new google.maps.LatLng(42.291910, -83.715832),
+    zoom: 14,
+    draggable: false,
+    zoomControl: false,
+    scrollwheel: false,
+    disableDoubleClickZoom: true,
+    disableDefaultUI: true,
+    styles: getMapStyle()
+  };
+  map = new google.maps.Map(document.getElementById("map-canvas"),
+      mapOptions);
+}
