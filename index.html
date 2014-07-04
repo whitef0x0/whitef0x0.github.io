@@ -256,8 +256,7 @@ Made with love by the MHacks Tech "Do you even hack, bro?" Team
               <div class="form-group">
                 <label class="col-md-5 col-md-offset-1 control-label" for="name">Your Name</label>  
                 <div class="col-md-5">
-                <input id="name" name="name" type="text" placeholder="Student Hacker" class="form-control input-md" required="">
-                  
+                <input id="name" name="name" type="text" placeholder="Student Hacker" class="form-control input-md" required=""> 
                 </div>
               </div>
 
@@ -272,10 +271,42 @@ Made with love by the MHacks Tech "Do you even hack, bro?" Team
 
               <!-- Text input-->
               <div class="form-group">
+                <label class="col-md-5 col-md-offset-1 control-label" for="major">Your Major</label>  
+                <div class="col-md-5">
+                <input id="major" name="major" type="text" placeholder="Sociology" class="form-control input-md" required="">
+                <span class="help-block">As of now, what's your intended major?</span>  
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
                 <label class="col-md-5 col-md-offset-1 control-label" for="school">Your School</label>  
                 <div class="col-md-5">
                 <input id="school" name="school" type="text" placeholder="University" class="form-control input-md" required="">
                   
+                </div>
+              </div>
+
+              <!-- Multiple Radios (inline) -->
+              <div class="form-group">
+                <label class="col-md-5 col-md-offset-1 control-label" for="grad_status">What year are you?</label>
+                <div class="col-md-5"> 
+                  <label class="radio-inline" for="grad_status-0">
+                    <input type="radio" name="grad_status" id="grad_status-0" value="freshman" checked="checked">
+                    Freshman
+                  </label>
+                  <label class="radio-inline" for="grad_status-1">
+                    <input type="radio" name="grad_status" id="grad_status-1" value="sophomore">
+                    Sophomore
+                  </label>
+                  <label class="radio-inline" for="grad_status-2">
+                    <input type="radio" name="grad_status" id="grad_status-2" value="junior">
+                    Junior
+                  </label>
+                  <label class="radio-inline" for="grad_status-3">
+                    <input type="radio" name="grad_status" id="grad_status-3" value="senior">
+                    Senior
+                  </label>
                 </div>
               </div>
 
@@ -309,6 +340,21 @@ Made with love by the MHacks Tech "Do you even hack, bro?" Team
                   <label class="col-md-5 col-md-offset-1 control-label" for="experience">Hackathons are about imagining and building ideas in real-time. What do you need to build something EPIC at MHacks IV?</label>
                   <div class="col-md-5">                     
                     <textarea class="form-control" id="experience" name="experience"></textarea>
+                  </div>
+                </div>
+
+                <!-- Multiple Radios (inline) -->
+                <div class="form-group">
+                  <label class="col-md-5 col-md-offset-1 control-label" for="possible_mentor">Would you consider spending some time mentoring during MHacks?</label>
+                  <div class="col-md-5"> 
+                    <label class="radio-inline" for="possible_mentor-1">
+                      <input type="radio" name="possible_mentor" id="possible_mentor-1" value="true" checked="checked">
+                      Yes
+                    </label>
+                    <label class="radio-inline" for="possible_mentor-0">
+                      <input type="radio" name="possible_mentor" id="possible_mentor-0" value="false">
+                      No
+                    </label>
                   </div>
                 </div>
               </div>
