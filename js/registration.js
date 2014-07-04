@@ -1,7 +1,7 @@
 // On page load...
 $(function() {
   // Set a listener for the experienced_hacker radio buttons
-  $('section#apply input[type=radio]').change(function() {
+  $('section#apply input[name=experienced_hacker]').change(function() {
     console.log(this.value);
     if (this.value === "true") {
       $('#noob-form').addClass('hidden');
