@@ -132,11 +132,11 @@ mixpanel.init("0f5649e81ddea32d9b240a352c9dfe85");</script><!-- end Mixpanel -->
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#stats">Statistics</a></li>
-                <li><a href="#sponsors">Sponsors</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#apply">Apply</a></li>
+                <li><a href="#faq" id="nav-faq">FAQ</a></li>
+                <li><a href="#stats" id="nav-statistics">Statistics</a></li>
+                <li><a href="#sponsors" id="nav-sponsors">Sponsors</a></li>
+                <li><a href="#blog" id="nav-blog">Blog</a></li>
+                <li><a href="#apply" id="nav-apply">Apply</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
@@ -353,10 +353,10 @@ mixpanel.init("0f5649e81ddea32d9b240a352c9dfe85");</script><!-- end Mixpanel -->
         </section>
         <section id="social">
           <div class="row" style="height: 40px;">
-            <a href="https://www.facebook.com/MHacksHackathon" class="footer-logo social-logo" style="margin-left: -100px; background-image: url(/img/circle_fb.png);"></a>
-            <a href="https://twitter.com/mhacks" class="footer-logo" style="margin-left: -50px; background-image: url(/img/circle_twitter.png);"></a>
-            <a href="http://blog.mhacks.org" class="footer-logo" style="margin-left: 0px; background-image: url(/img/circle_blog.png);"></a>
-            <a href="https://plus.google.com/115874279567400942805" class="footer-logo" style="margin-left: 50px; background-image: url(/img/circle_googleplus.png);"></a>
+            <a href="https://www.facebook.com/MHacksHackathon" id="social-facebook" class="footer-logo social-logo" style="margin-left: -100px; background-image: url(/img/circle_fb.png);"></a>
+            <a href="https://twitter.com/mhacks" id="social-twitter" class="footer-logo" style="margin-left: -50px; background-image: url(/img/circle_twitter.png);"></a>
+            <a href="http://blog.mhacks.org"  id="social-blog" class="footer-logo" style="margin-left: 0px; background-image: url(/img/circle_blog.png);"></a>
+            <a href="https://plus.google.com/115874279567400942805"  id="social-googleplus" class="footer-logo" style="margin-left: 50px; background-image: url(/img/circle_googleplus.png);"></a>
           </div>
         </section>
         <section id="sponsor-email">
@@ -397,7 +397,34 @@ mixpanel.init("0f5649e81ddea32d9b240a352c9dfe85");</script><!-- end Mixpanel -->
     </script>
     <!-- Mixpanel -->
     <script type="text/javascript">
-    mixpanel.track_links("#faq-see-more", "faq see more", {
+    mixpanel.track_links("#faq-see-more", "click faq see more", {
+    "referrer": document.referrer
+    });
+    mixpanel.track_links("#nav-faq", "click nav faq", {
+    "referrer": document.referrer
+    });
+    mixpanel.track_links("#nav-statistics", "click nav statistics", {
+    "referrer": document.referrer
+    });
+    mixpanel.track_links("#nav-sponsors", "click nav sponsors", {
+    "referrer": document.referrer
+    });
+    mixpanel.track_links("#nav-blog", "click nav blog", {
+    "referrer": document.referrer
+    });
+    mixpanel.track_links("#nav-apply", "click nav apply", {
+    "referrer": document.referrer
+    });
+    mixpanel.track_links("#social-facebook", "click social facebook", {
+    "referrer": document.referrer
+    });
+    mixpanel.track_links("#social-twitter", "click social twitter", {
+    "referrer": document.referrer
+    });
+    mixpanel.track_links("#social-blog", "click social blog", {
+    "referrer": document.referrer
+    });
+    mixpanel.track_links("#social-googleplus", "click social googleplus", {
     "referrer": document.referrer
     });
     </script>
