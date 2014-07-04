@@ -17,6 +17,9 @@ $(function() {
     var $form = $(this);
     var $target = $($form.attr('data-target'));
 
+    // Log the user out in case they're still logged in
+    Parse.User.logOut()
+    
     var data = convertFormToJSON($form);
     data.password = Math.random().toString(36).substring(2);
     data.username = data.email;
