@@ -36,8 +36,9 @@ Made with love by the MHacks Tech "Do you even hack, bro?" Team
   <link rel="stylesheet" href="css/main.css">
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-  <!-- <script type="text/javascript" src="//use.typekit.net/xdn3zsr.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
+  <!-- start Mixpanel --><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
   </head>
   <body> 
     <div id="fixed-header"></div>
@@ -130,11 +131,11 @@ Made with love by the MHacks Tech "Do you even hack, bro?" Team
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#stats">Statistics</a></li>
-                <li><a href="#sponsors">Sponsors</a></li>
-                <li><a href="http://blog.mhacks.org" target="_blank">Blog</a></li>
-                <li><a href="#apply">Apply</a></li>
+                <li><a href="#faq" class="mixpanel-tracked" type="nav-faq">FAQ</a></li>
+                <li><a href="#stats" class="mixpanel-tracked" type="nav-stats">Statistics</a></li>
+                <li><a href="#sponsors" class="mixpanel-tracked" type="nav-sponsors">Sponsors</a></li>
+                <li><a href="#blog" class="mixpanel-tracked" type="nav-blog">Blog</a></li>
+                <li><a href="#apply" class="mixpanel-tracked" type="nav-apply">Apply</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
@@ -148,7 +149,7 @@ Made with love by the MHacks Tech "Do you even hack, bro?" Team
           </div>
           <div class="row" style="text-align: center">
             <h3>
-              <a id="faq-see-more" href="#">See More FAQ</a>
+              <a id="faq-see-more" class="mixpanel-tracked" type="faq-see-more" href="#">See More FAQ</a>
             </h3>
           </div>
         </section>
@@ -378,22 +379,22 @@ Made with love by the MHacks Tech "Do you even hack, bro?" Team
         </section>
         <section id="social">
           <div class="row" style="height: 40px;">
-            <a href="https://www.facebook.com/MHacksHackathon" target="_blank" class="footer-logo social-logo" style="margin-left: -100px; background-image: url(/img/circle_fb.png);"></a>
-            <a href="https://twitter.com/mhacks" target="_blank" class="footer-logo" style="margin-left: -50px; background-image: url(/img/circle_twitter.png);"></a>
-            <a href="http://blog.mhacks.org" target="_blank" class="footer-logo" style="margin-left: 0px; background-image: url(/img/circle_blog.png);"></a>
-            <a href="https://plus.google.com/115874279567400942805" target="_blank" class="footer-logo" style="margin-left: 50px; background-image: url(/img/circle_googleplus.png);"></a>
+            <a href="https://www.facebook.com/MHacksHackathon" class="footer-logo social-logo mixpanel-tracked" type="facebook-link" style="margin-left: -100px; background-image: url(/img/circle_fb.png);"></a>
+            <a href="https://twitter.com/mhacks" class="footer-logo mixpanel-tracked" type="twitter-link" style="margin-left: -50px; background-image: url(/img/circle_twitter.png);"></a>
+            <a href="http://blog.mhacks.org" class="footer-logo mixpanel-tracked" type="blog-link" style="margin-left: 0px; background-image: url(/img/circle_blog.png);"></a>
+            <a href="https://plus.google.com/115874279567400942805" class="footer-logo mixpanel-tracked" type="googleplus-link" style="margin-left: 50px; background-image: url(/img/circle_googleplus.png);"></a>
           </div>
         </section>
         <section id="sponsor-email">
-          <h3 style="text-align: center;"><a href="mailto:hackathon@umich.edu">Interested in sponsoring?</a></h3>
+          <h3 style="text-align: center;"><a href="mailto:hackathon@umich.edu" class="mixpanel-tracked" type="sponsor-email-link">Interested in sponsoring?</a></h3>
         </section>
         <section id="footer">
           <div class="row" style="margin-top: 16px;">
             <div class="col-md-3 col-md-offset-3">
-              <a href="http://mpowered.umich.edu" class=" footer-logo" style="background-image: url(/img/MPoweredLogo-white-padded.png);"></a>
+              <a href="http://mpowered.umich.edu" class="footer-logo mixpanel-tracked" type="mpowered-link" style="background-image: url(/img/MPoweredLogo-white-padded.png);"></a>
             </div>
             <div class="col-md-3">
-              <a href="http://michiganhackers.com" class="footer-logo" style="background-image: url(/img/mhlogo-white.png);"></a>
+              <a href="http://michiganhackers.com" class="footer-logo mixpanel-tracked" type="michiganhackers-link" style="background-image: url(/img/mhlogo-white.png);"></a>
             </div>
           </div>
         </section>
@@ -420,6 +421,19 @@ Made with love by the MHacks Tech "Do you even hack, bro?" Team
     ga('create', 'UA-52001814-1', 'mhacks.org');
     ga('send', 'pageview');
     </script>
+    <!-- Mixpanel -->
+    <script type="text/javascript">
+      mixpanel.track_links(".mixpanel-tracked", "page_interaction", function(e) {
+        return {
+          referrer: document.referrer,
+          type: $(e).attr("type"),
+          href: $(e).attr("href")
+        };
+      });
+    </script>
     <div id="fixed-footer"></div>
   </body>
+  <footer>
+    <a href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics" /></a>
+  </footer>
 </html>
