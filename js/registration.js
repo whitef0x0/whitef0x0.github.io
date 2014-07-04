@@ -15,6 +15,7 @@ $(function() {
 
   // handler for form submission
   $('form').submit(function(event) {
+    $('#submit').button('loading');
     var $form = $(this);
     var $target = $($form.attr('data-target'));
 
@@ -29,12 +30,11 @@ $(function() {
     user.signUp(data, {
       success: function(user) {
         window.alert("Thanks for your application! Please check your email to confirm your address.");
-        console.log(user);
+        $('#submit').button('reset');
       },
       error: function(user, error) {
         window.alert("There was an error with your application: " + error.message);
-        console.log(user);
-        console.log(error);
+        $('#submit').button('reset');
       }
     });
 
