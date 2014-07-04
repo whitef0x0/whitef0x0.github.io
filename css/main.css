@@ -380,11 +380,11 @@ section {
   padding: 20px 0;
 }
 
-  #map-overlay > .col-md-4 {
+  #map-overlay > div {
     height: 420px;
   }
 
-  #map-overlay > .col-md-4 > div {
+  #map-overlay > div > div {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
