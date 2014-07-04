@@ -452,7 +452,7 @@ section {
   padding-left: 80px;
   padding-right: 80px;
   overflow: hidden;
-  max-height: 1200px;
+  /*max-height: 1200px;*/
   box-shadow: inset 0 2px 8px black;
   padding-bottom: 40px;
   padding-top: 20px;

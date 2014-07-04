@@ -43,7 +43,8 @@ $(function() {
       type: "faq-see-more",
       href: "#"
     });
-    $('#faq-pane').css('max-height', '1900px');
+    // $('#faq-pane').removeClass('faq-rolled');
+    // $('#faq-pane').removeAttr('max-height');
     viewportUnitsBuggyfill.refresh();
     e.preventDefault();
   });
