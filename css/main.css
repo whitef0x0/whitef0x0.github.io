@@ -189,7 +189,7 @@ body p {
   font-family: 'Roboto';
   font-size: 15px;
   line-height: 1.34em;
-  text-align: justify;
+  /*text-align: justify;*/
 }
 
 #loading-curtain {
@@ -458,9 +458,9 @@ section {
   padding-top: 20px;
 }
 
-  #faq-pane p {
+  /*#faq-pane p {
     text-align: justify;
-  }
+  }*/
 
 .faq-rolled {
   margin-top: -60px;
