@@ -102,7 +102,7 @@ $(function() {
     $(this).remove(); // prevent memory leaks as @benweet suggested
     $('body').css('background-image', 'url(' + bg + ')');
     $('#main-container').removeClass('transparent');
-    $('#loading-curtain').addClass('transparent');
+    $('#loading-curtain').addClass('hidden');
     setTimeout(function() {
       // $('#loading-curtain').css('display', 'none');
     }, 650);
