@@ -97,6 +97,28 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* LOL */
+
+#anchor-greeting {
+  text-align: center !important;
+  margin-top: -15px !important;
+}
+
+  #anchor-greeting h1 {
+    margin: 0;
+    font-size: 8vh;
+  }
+
+  #anchor-greeting h2 {
+    margin: 0;
+    font-size: 6vh;
+  }
+
+  #anchor-greeting a {
+    margin: auto;
+    margin-top: 1vh;
+  }
+
 path {
   fill:none;
   stroke:#FFFFFF;

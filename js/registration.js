@@ -10,6 +10,7 @@ $(function() {
       $('#experienced-form').addClass('hidden');
       $('#noob-form').removeClass('hidden');
     }
+    viewportUnitsBuggyfill.refresh();
   });
 
   // handler for form submission

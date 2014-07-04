@@ -43,6 +43,7 @@ $(function() {
       type: "faq-see-more",
       href: "#"
     });
+    viewportUnitsBuggyfill.refresh();
     e.preventDefault();
   });
 
@@ -86,6 +87,7 @@ $(function() {
   // fix the width when resized
   $(window).resize(fixNavWidth);
   fixNavWidth();
+  if (jQuery.browser.mobile) $('#logo-wrapper').css('max-height', $('#logo-wrapper').height());
   // so the page doesn't jump around later...
   $('#logo-wrapper').css('min-height', $('#anchor-greeting').height());
 
@@ -104,6 +106,7 @@ $(function() {
 
     // The path has been reset, so show the div
     $('#logo-wrapper').removeClass('invisible');
+    viewportUnitsBuggyfill.refresh();
     // start the logo animation in 500ms
     runLogoAnimation(1000);
     });
@@ -129,6 +132,8 @@ $(function() {
     displayKey: 'foo',
     source: schools.ttAdapter()
   });
+
+  viewportUnitsBuggyfill.refresh();
 });
 
 
@@ -174,6 +179,7 @@ function fixNavWidth() {
   $('section#faq').css('margin-top', offset + "px")
   $('#main-container').css('margin-top', "-" + offset + "px");
   $('#main-nav').width($('#main-container').outerWidth());
+  viewportUnitsBuggyfill.refresh();
 }
 
 function getNavOffset() {
@@ -230,37 +236,3 @@ function simulatePathDrawing(path, duration) {
   path.style.strokeWidth = strokeWidth;
   path.style.fill = fill;
 };
-
-function submitEmail() {
-  var email = $("#email-input").val();
-  if (validateEmail(email)) {
-    swapForm(false);
-    $("#upload-progress h2").text("Yeah, you're ready.");
-    $("#upload-progress").removeClass('faded');
-    var EmailDrop = Parse.Object.extend("EmailDrop");
-    var obj = new EmailDrop();
-    obj.set("email", email);
-    obj.save(null, {
-      success: function(obj) {
-        // nuthin'
-      },
-      error: function(obj) {
-        window.alert("I don't know what happened, but you should try that again.");
-      }
-    });
-  }
-  else if (email.length != 0) {
-    swapForm(true);
-    $("#upload-progress h2").text("I didn't Google that regex for nothing.");
-    $("#upload-progress").removeClass('faded');
-  }
-}
-
-function swapForm(unswap) {
-  $("#email-form").addClass('faded');
-  $("#email-input").val("");
-  if(unswap) window.setTimeout(function() {
-    $("#upload-progress").addClass('faded');
-    $("#email-form").removeClass('faded');
-  }, 5000);
-}
