@@ -455,6 +455,7 @@ section {
   max-height: 1200px;
   box-shadow: inset 0 2px 8px black;
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
   #faq-pane p {
