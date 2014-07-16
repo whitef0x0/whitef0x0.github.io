@@ -99,6 +99,14 @@ textarea {
 
 /* LOL */
 
+#social-applets {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
 #anchor-greeting {
   text-align: center !important;
   margin-top: -15px !important;
