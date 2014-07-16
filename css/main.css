@@ -184,6 +184,10 @@ h3 {
   font-size: 44px;
 }
 
+h4 {
+  font-size: 34px;
+}
+
 .form-group label, .form-group input, .form-group span, .form-group textarea {
   font-family: 'Roboto';
   font-weight: 100;
@@ -646,6 +650,20 @@ span.twitter-typeahead {
   color: #FFF;
   background-color: rgba(255, 255, 255, 0.40);
   border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.panel-default {
+  background-color: #191919;
+  border: none;
+}
+
+.btn.btn-social-style {
+  height: 20px;
+  font-family: 'roboto';
+  font-size: 12px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-color: white;
 }
 
 .smoothed {
