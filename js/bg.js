@@ -24,6 +24,7 @@ $(function() {
   // pick a random background
   var img = Math.floor(Math.random() * 21) + 1;
   COLOR = colors[img-1];
+  $('.colorified').css('background-color', COLOR);
   var bg = '/img/poly/' + img +'.jpg';
   $('<img/>').attr('src', bg).load(function() {
     $(this).remove(); // prevent memory leaks as @benweet suggested
@@ -32,3 +33,4 @@ $(function() {
     viewportUnitsBuggyfill.refresh();
   });
 });
+
