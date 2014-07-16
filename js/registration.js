@@ -13,6 +13,15 @@ $(function() {
     viewportUnitsBuggyfill.refresh();
   });
 
+  // should really disable the return key because people keep submitting incomplete apps
+  $('form').bind("keyup keypress", function(e) {
+    var code = e.keyCode || e.which; 
+    if (code  == 13) {               
+      e.preventDefault();
+      return false;
+    }
+  });
+
   // handler for form submission
   $('form').submit(function(event) {
     $('#submit').button('loading');
