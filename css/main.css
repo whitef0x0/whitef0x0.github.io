@@ -403,6 +403,21 @@ section {
     font-size: 90px;
     line-height: 0.8em;
   }
+  section#sponsors .sponsor {
+    display: block;
+  }
+  section#sponsors > .row {
+    margin-bottom: 20px;
+  }
+  section#sponsors .col-md-6 .sponsor {
+    height: 180px;
+  }
+  section#sponsors .col-md-4 .sponsor {
+    height: 140px;
+  }
+  section#sponsors .col-md-3 .sponsor {
+    height: 120px;
+  }
 
 #map-canvas {
   position: absolute; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3);
