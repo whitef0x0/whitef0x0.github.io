@@ -98,15 +98,36 @@ textarea {
    ========================================================================== */
 
 /* LOL */
-
 #social-applets {
-  z-index: 100;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 10px;
   margin-right: 10px;
+  z-index: 99;
+  position: absolute;
+  right: 0px;
 }
+
+  @media(min-width: 768px) {
+    #social-applets {
+      top: 0;
+      margin-top: 10px;
+    }
+      #social-applets > div {
+        float: left;
+      }
+      #social-applets > .twitter {
+        margin-right: 10px;
+      }
+  }
+
+  @media(max-width: 768px) {
+    #social-applets {
+      bottom: 48px;
+      margin-bottom: 10px;
+    }
+      #social-applets > div {
+        float: none;
+        text-align: right;
+      }
+  }
 
 #anchor-greeting {
   text-align: center !important;

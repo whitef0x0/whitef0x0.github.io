@@ -47,13 +47,6 @@ mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
     </script>
   </head>
   <body> 
-    <div id="social-applets">
-      <div style="margin-right: 10px; float: left;">
-        <a href="https://twitter.com/mhacks" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @mhacks</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
-      <div class="fb-like" style="float: left;" data-href="https://www.facebook.com/MHacksHackathon" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
-    </div>
     <div id="fixed-header"></div>
     <div id="loading-curtain" class="fade-animated locked">
       <div class="loading-icon"></div>
@@ -66,8 +59,14 @@ mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=567361250010506&version=v2.0";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-
       <div id="logo-wrapper" class="full invisible locked fade-animated">
+        <div id="social-applets">
+          <div class="twitter">
+            <a href="https://twitter.com/mhacks" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @mhacks</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+          <div class="facebook fb-like" data-href="https://www.facebook.com/MHacksHackathon" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+        </div>
         <svg id="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" class="logo-animated" style="height: 50%; width: 100%;">
         <path id="logo-outline-path" length="2345.321044921875"
           d="M377.206,110.58c-23.801,40.272-47.359,78.114-71.243,115.471c-23.879-37.357-47.744-75.199-71.545-115.471C179.678,105.373,125.5,94.176,72.5,76.993c0,155.082,0,310.153,0,465.234c53-17.186,106-28.38,160-33.587c0-45.299,0-90.597,0-135.896c28,25.883,48.621,51.223,72.5,77.378c23.879-26.155,45.5-51.495,72.5-77.378c0,45.299,0,90.597,0,135.896c54,5.207,108,16.401,161,33.587c0-155.081,0-310.152,0-465.234C485.5,94.176,431.945,105.373,377.206,110.58z"
