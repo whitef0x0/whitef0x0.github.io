@@ -403,19 +403,23 @@ section {
     font-size: 90px;
     line-height: 0.8em;
   }
+  /*@media(max-width: 768px) {*/
+    section#sponsors .col-sm-6 {
+      padding: 0;
+    }
+  /*}*/
+  
   section#sponsors .sponsor {
     display: block;
-  }
-  section#sponsors > .row {
     margin-bottom: 20px;
   }
   section#sponsors .col-md-6 .sponsor {
     height: 180px;
   }
-  section#sponsors .col-md-4 .sponsor {
+  section#sponsors .col-sm-4 .sponsor {
     height: 140px;
   }
-  section#sponsors .col-md-3 .sponsor {
+  section#sponsors .col-xs-6 .sponsor {
     height: 120px;
   }
 
