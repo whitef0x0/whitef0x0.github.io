@@ -408,18 +408,28 @@ section {
       padding: 0;
     }
   /*}*/
+
+  section#sponsors {
+    /*padding: 0;*/
+    background-color: #FFFFFF;
+  }
   
   section#sponsors .sponsor {
     display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .row.gold, .row.silver, .row.bronze {
     margin-bottom: 20px;
   }
-  section#sponsors .col-md-6 .sponsor {
+  section#sponsors .row.gold .sponsor {
     height: 180px;
   }
-  section#sponsors .col-sm-4 .sponsor {
+  section#sponsors .row.silver .sponsor {
     height: 140px;
   }
-  section#sponsors .col-xs-6 .sponsor {
+  section#sponsors .row.bronze .sponsor {
     height: 120px;
   }
 
