@@ -348,7 +348,7 @@ body p {
   }
 }
 section {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
   section h2, section h3 {
@@ -411,7 +411,8 @@ section {
 
   section#sponsors {
     /*padding: 0;*/
-    background-color: #FFFFFF;
+    background-color: #FCFCFC;
+    padding-bottom: 15px;
   }
   
   section#sponsors .sponsor {
@@ -419,9 +420,20 @@ section {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
   }
-  .row.gold, .row.silver, .row.bronze {
+  .row.gold, .row.silver {
     margin-bottom: 20px;
+  }
+  .row.bronze {
+    margin-bottom: 40px;
+  }
+  .row.unobtanium {
+    margin-bottom: 60px;
+  }
+  section#sponsors .row.unobtanium .sponsor {
+    height: 240px;
   }
   section#sponsors .row.gold .sponsor {
     height: 180px;
