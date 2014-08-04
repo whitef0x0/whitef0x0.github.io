@@ -348,7 +348,7 @@ body p {
   }
 }
 section {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
   section h2, section h3 {
@@ -402,6 +402,47 @@ section {
   section#stats h2 {
     font-size: 90px;
     line-height: 0.8em;
+  }
+  /*@media(max-width: 768px) {*/
+    section#sponsors .col-sm-6 {
+      padding: 0;
+    }
+  /*}*/
+
+  section#sponsors {
+    /*padding: 0;*/
+    background-color: #FCFCFC;
+    padding-bottom: 15px;
+  }
+  
+  section#sponsors .sponsor {
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+  .row.gold, .row.silver {
+    margin-bottom: 20px;
+  }
+  .row.bronze {
+    margin-bottom: 40px;
+  }
+  .row.unobtanium {
+    margin-bottom: 60px;
+  }
+  section#sponsors .row.unobtanium .sponsor {
+    height: 240px;
+  }
+  section#sponsors .row.gold .sponsor {
+    height: 180px;
+  }
+  section#sponsors .row.silver .sponsor {
+    height: 140px;
+  }
+  section#sponsors .row.bronze .sponsor {
+    height: 120px;
   }
 
 #map-canvas {
