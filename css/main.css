@@ -370,6 +370,10 @@ section {
     margin-left: -20px;
   }
 
+  section#footer {
+    margin-bottom: 0;
+  }
+
   section#footer > .row > div {
     padding: 10px;
   }
@@ -415,7 +419,7 @@ section {
     padding-bottom: 15px;
   }
   
-  section#sponsors .sponsor {
+  .sponsor {
     display: block;
     background-size: contain;
     background-repeat: no-repeat;
