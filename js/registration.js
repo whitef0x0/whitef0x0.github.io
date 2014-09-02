@@ -1,31 +1,32 @@
 // On page load...
 $(function() {
   // Set a listener for the experienced_hacker radio buttons
-  $('section#apply input[name=experienced_hacker]').change(function() {
-    console.log(this.value);
-    if (this.value === "true") {
-      $('#noob-form').addClass('hidden');
-      $('#experienced-form').removeClass('hidden');
-    } else {
-      $('#experienced-form').addClass('hidden');
-      $('#noob-form').removeClass('hidden');
-    }
-    viewportUnitsBuggyfill.refresh();
-  });
+  // $('section#apply input[name=experienced_hacker]').change(function() {
+  //   console.log(this.value);
+  //   if (this.value === "true") {
+  //     $('#noob-form').addClass('hidden');
+  //     $('#experienced-form').removeClass('hidden');
+  //   } else {
+  //     $('#experienced-form').addClass('hidden');
+  //     $('#noob-form').removeClass('hidden');
+  //   }
+  //   viewportUnitsBuggyfill.refresh();
+  // });
 
   // should really disable the return key because people keep submitting incomplete apps
-  $('form').bind("keyup keypress", function(e) {
-    var code = e.keyCode || e.which; 
-    if (code  == 13) {               
-      e.preventDefault();
-      return false;
-    }
-  });
+  // $('form').bind("keyup keypress", function(e) {
+  //   var code = e.keyCode || e.which; 
+  //   if (code  == 13) {               
+  //     e.preventDefault();
+  //     return false;
+  //   }
+  // });
 
   // handler for form submission
   $('form').submit(function(event) {
+    console.log("here");
     $('#submit').button('loading');
-    var $form = $(this);
+    var $form = $('this');
     var $target = $($form.attr('data-target'));
 
     // Log the user out in case they're still logged in
@@ -38,8 +39,8 @@ $(function() {
     var user = new Parse.User();
     user.signUp(data, {
       success: function(user) {
-        // window.alert("Thanks for your application! Please check your email to confirm your address.");
-        window.location = "/success.html"
+        //window.alert("Thanks for your application! Please check your email to confirm your address.");
+        window.location = "./success.html"
         $('#submit').button('reset');
       },
       error: function(user, error) {

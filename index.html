@@ -22,149 +22,182 @@ Made with love by the MHacks Tech "Do you even hack, bro?" Team
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>MHacks IV Is Coming</title>
+  <title>nwHacks Micro is Coming</title>
   <meta property="og:title" name="og:title" content="MHacks IV Is Coming"/>
   <meta property="og:site_name" name="og:site_name" content="MHacks"/>
   <meta property="og:url" name="og:url" content="http://mhacks.org"/>
-  <meta property="og:image" name="og:content" content="http://mhacks.org/img/og-cover.jpg?v=4"/>
+  <meta property="og:image" name="og:content" content="http://mhacks.org./img/og-cover.jpg?v=4"/>
   <meta name="description" property="description" content="The Most Epic Hackathon returns September 5-7. Are you ready?">
   <meta name="og:description" property="og:description" content="The Most Epic Hackathon returns September 5-7. Are you ready?">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <link rel="image_src" href="img/mhacks_frame.png" >
-  <link rel="shortcut icon" href="img/mhacks_frame.png">
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/lavish-bootstrap.css">
   <link rel="stylesheet" href="css/typeahead.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-  <!-- start Mixpanel --><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
-for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
-mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
+
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdVaHIXO92K3gEkbfYu3cs25Atv_clQd0">
     </script>
   </head>
-  <body> 
-    <div id="fixed-header"></div>
-    <div id="loading-curtain" class="fade-animated locked">
-      <div class="loading-icon"></div>
-    </div>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=567361250010506&version=v2.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-      <div id="logo-wrapper" class="full invisible locked fade-animated">
-        <div id="social-applets">
-          <div class="twitter">
-            <a href="https://twitter.com/mhacks" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @mhacks</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          </div>
-          <div class="facebook fb-like" data-href="https://www.facebook.com/MHacksHackathon" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
-        </div>
-        <svg id="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" class="logo-animated" style="height: 50%; width: 100%;">
-        <path id="logo-outline-path" length="2345.321044921875"
-          d="M377.206,110.58c-23.801,40.272-47.359,78.114-71.243,115.471c-23.879-37.357-47.744-75.199-71.545-115.471C179.678,105.373,125.5,94.176,72.5,76.993c0,155.082,0,310.153,0,465.234c53-17.186,106-28.38,160-33.587c0-45.299,0-90.597,0-135.896c28,25.883,48.621,51.223,72.5,77.378c23.879-26.155,45.5-51.495,72.5-77.378c0,45.299,0,90.597,0,135.896c54,5.207,108,16.401,161,33.587c0-155.081,0-310.152,0-465.234C485.5,94.176,431.945,105.373,377.206,110.58z"
-        ></path>
-        <circle class="shrunken grow-animated" cx="98.859" cy="144.016"  len="0" r="10.613"></circle>
-        <circle class="shrunken grow-animated" cx="324.738" cy="352.357" len="0" r="13.846"></circle>
-        <circle class="shrunken grow-animated" cx="489.964" cy="147.25"  len="0" r="13.846"></circle>
-        <circle class="shrunken grow-animated" cx="484.765" cy="378.602" len="0" r="19.045"></circle>
-        <circle class="shrunken grow-animated" cx="120.145" cy="488.788" len="0" r="13.846"></circle>
-        <circle class="shrunken grow-animated" cx="167.788" cy="299.998" len="0" r="21.147"></circle>
-        <circle class="shrunken grow-animated" cx="391.885" cy="233.814" len="0" r="11.807"></circle>
-        <circle class="shrunken grow-animated" cx="392.962" cy="315.377" len="0" r="5.767" stroke-width="3"></circle>
-        <circle class="shrunken grow-animated" cx="194.192" cy="411.494" len="0" r="13.846"></circle>
-        <circle class="shrunken grow-animated" cx="470.919" cy="474.942" len="0" r="13.846"></circle>
-        <circle class="shrunken grow-animated" cx="232.977" cy="184.764" len="0" r="5.767" stroke-width="3"></circle>
-        <path length="341.06646728515625" d="M98.859,144.016L167.788,299.998z"></path>
-        <path length="389.4176330566406" d="M167.788,299.998L120.145,488.788z"></path>
-        <path length="614.5804443359375" d="M98.859,144.016L324.738,352.357z"></path>
-        <path length="690.8568725585938" d="M98.859,144.016L120.145,488.788z"></path>
-        <path length="222.93666076660156" d="M484.765,378.602L392.962,315.377z"></path>
-        <path length="155.20352172851562" d="M324.738,352.357L392.962,315.377z"></path>
-        <path length="462.82080078125" d="M489.964,147.25L484.765,378.602z"></path>
-        <path length="229.1595916748047" d="M167.788,299.998L194.192,411.494z"></path>
-        <path length="214.0777587890625" d="M194.192,411.494L120.145,488.788z"></path>
-        <path length="261.63189697265625" d="M391.885,233.814L489.964,147.25z"></path>
-        <path length="272.47869873046875" d="M391.885,233.814L324.738,352.357z"></path>
-        <path length="467.33197021484375" d="M167.788,299.998L391.885,233.814z"></path>
-        <path length="344.036376953125" d="M484.765,378.602L391.885,233.814z"></path>
-        <path length="194.65977478027344" d="M470.919,474.942L484.765,378.602z"></path>
-        <path length="355.18035888671875" d="M470.919,474.942L392.962,315.377z"></path>
-        <path length="382.138671875" d="M324.738,352.357L232.977,184.764z"></path>
-        <path length="252.84983825683594" d="M167.788,293.086L232.977,184.764z"></path>
-        <path length="144.38075256347656" d="M98.859,144.016L72.038,76.993z"></path>
-        <path length="387.38067626953125" d="M72.038,76.993L232.977,184.764z"></path>
-        <path length="143.80555725097656" d="M120.145,488.788L72.038,542.227z"></path>
-        <path length="227.2808380126953" d="M120.145,488.788L232.038,508.64z"></path>
-        <path length="208.51541137695312" d="M194.192,411.494L232.038,508.64z"></path>
-        <path length="108.33064270019531" d="M194.192,411.494L232.038,372.744z"></path>
-        <path length="194.1138153076172" d="M232.038,372.744L167.788,299.998z"></path>
-        <path length="112.26608276367188" d="M324.738,352.357L377.038,372.744z"></path>
-        <path length="173.46624755859375" d="M391.885,233.814L305.5,226.051z"></path>
-        <path length="248.32154846191406" d="M391.885,233.814L376.743,110.58z"></path>
-        <path length="170.260498046875" d="M489.964,147.25L538.038,76.993z"></path>
-        <path length="344.1578369140625" d="M484.765,378.602L538.038,542.227z"></path>
-        <path length="190.07614135742188" d="M470.919,474.942L538.038,542.227z"></path>
-        <path length="199.49136352539062" d="M470.919,474.942L377.038,508.64z"></path>
-        <path length="215.77235412597656" d="M377.038,372.744L484.765,378.602z"></path>
-        <path length="337.7276916503906" d="M484.765,378.602L377.038,508.64z"></path>
-        <path length="199.66009521484375" d="M324.738,352.357L304.538,450.122z"></path>
-        <path length="189.8306884765625" d="M232.038,372.744L324.738,352.357z"></path>
-        <path length="148.3809051513672" d="M232.977,184.764L233.955,110.58z"></path>
-        <path length="238.0225067138672" d="M489.964,147.25L376.743,110.58z"></path>
-        </svg>
-        <div id="anchor-greeting" class="locked">
-          <h1>THE ORIGINAL</h1>
-          <h1>EPIC HACKATHON</h1>
-          <h2>SEPT 5-7, ANN ARBOR</h2>
-          <a href="#apply" class="btn btn-default smoothed colorified">APPLY</a>
-        </div>
-      </div>
-      <div id="main-container" class="container transparent fade-animated" style="margin-top: -66px;">
-        <nav id="main-nav" class="navbar navbar-default" role="navigation">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#faq" class="mixpanel-tracked" type="nav-faq">FAQ</a></li>
-                <li><a href="#apply" class="mixpanel-tracked" type="nav-apply">Apply</a></li>
-                <li><a href="#sponsors" class="mixpanel-tracked" type="nav-sponsors">Sponsors</a></li>
-                <li><a href="http://blog.mhacks.org" target="_blank" class="mixpanel-tracked" type="nav-blog">Blog</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-        <section id="faq">
+
+  <body> 
+    
+    <div id="fb-root"></div>
+
+    <header id="micro-header">
+      <div class="darkness"></div>
+      <div id="micro-hero">
+          <h2>Small but</h2><h3>EPIC</h3>
+      </div>
+      <div class="logo-left"></div>
+      <div class="triangle-left" >
+        <img class="triangle" src="img/micro/triangle-left.png" alt="">
+        <img class="logo" src="img/micro/nwhacks_micro_logo_white.png" alt="">
+      </div>
+      <div class="triangle-right"><img  src="img/micro/triangle-right.png" alt=""></div>
+    </header>
+    <section id="micro-intro">
+      <article id="faq">
           <div class="row">
             <div class="col-md-12">
-              <h2>What is MHacks?</h2>
+              <h2 class="text-center">What is nwHacks Micro?</h2>
               <p>A hackathon is the single greatest thing to happen to education since the Internet. Hacking isn't breaking into anything-- Its breaking your ideas out of the confines of your mind and building them in front of your own eyes and sharing that product with the world.</p><p>Students from across the world come to MHacks to build amazing things, transform dreams into realities, and to meet with other people with the same level of passion to build their future. MHacks is for creators. Students spend 36 hours building anything they can imagine, and take breaks to interact with technology visionaries, founders, and find new mentors. They meet with the hottest, most sought-after companies in the world who vie for hackers' attention. For MHacks, students give up a weekend of partying to invest a weekend in their personal growth by learning something new, and creating solutions to problems they see in the world. MHacks isn't just a hackathon -- its a community of people who have ideas and build them. Apply now and join us.</p>
             </div>
           </div>
           <div class="row" style="text-align: center">
-            <h3>
+            <!--             <h3>
               <a id="faq-see-more" href="#">See More FAQ</a>
-            </h3>
+            </h3> -->
           </div>
+      </article>
+      <article class="grid-container">
+        <div class="grid-100 logo"><img src="img/micro/logo-micro-opaque.png" alt=""></div>
+        <div class="date grid-100">
+          <time datetime="2015-01-09">
+            <span class="month">September</span>
+            <span class="day">20<sup>th</sup></span>
+            <span class="year">2014</span>
+          </time>
+        </div>
+        <p class="grid-100">
+          nwHacks Micro is the first big hacker event of the year. We're putting together an eight hour event for everyone to get a taste of what the full nwHacks experience will be like. Come out, make friends, and hack together something extraordinary. 
+          <br>
+          Membership to StartupStorm is <strong>mandatory.</strong>
+        </p>
+        <section id="apply">
+        <form class="prefix-30 suffix-30 grid-40 tablet-grid-60 tablet-prefix-20 tablet-suffix-20">
+          <fieldset>
+            <!-- Form Name -->
+            <legend>Apply Now</legend>
+            <label>Personal</label>
+            <div class="form-group">
+              <div class="col-md-100">
+              <input id="name" name="name" type="text" placeholder="Your Name" class="form-control input-md" required=""> 
+              </div>
+            </div>
+
+            <div class="form-group">
+                  
+              <div class="col-md-100">
+                <input id="email" name="email" type="text" placeholder="you@school.edu" class="form-control input-md" required="">
+                <span class="help-block">Use your alumni.ubc.ca email address, if possible.</span>  
+              </div>
+            </div>
+
+            <label>Professional</label>
+
+            <!-- Text input-->
+            <div class="form-group row">
+              <div class="col-md-100">
+              <input id="major" name="major" type="text" placeholder="Design" class="form-control input-md" required="">
+              <span class="help-block">As of now, what's your intended major?</span>  
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group row">
+              <label class="col-md-5 col-md-offset-1 control-label" for="school">Your School</label>  
+
+              <div class="col-md-90">
+                <input id="school" name="school" type="text" placeholder="University" class="form-control input-md" required="">
+              </div>
+            </div>
+                        <!-- Multiple Radios (inline) -->
+            <div class="form-group ">
+              <label class="col-md-100 col-md-offset-1 control-label" for="grad_status">What year will you be in this Fall?</label>
+              <div class="col-md-80 col-md-offset-20"> 
+                <label class="radio-inline" for="grad_status-0">
+                  <input type="radio" name="grad_status" id="grad_status-0" value="freshman" checked="checked">
+                  1st
+                </label>
+                <label class="radio-inline" for="grad_status-1">
+                  <input type="radio" name="grad_status" id="grad_status-1" value="sophomore">
+                  2nd
+                </label>
+                <label class="radio-inline" for="grad_status-2">
+                  <input type="radio" name="grad_status" id="grad_status-2" value="junior">
+                  3rd
+                </label>
+                <label class="radio-inline" for="grad_status-3">
+                  <input type="radio" name="grad_status" id="grad_status-3" value="senior">
+                  4th+
+                </label>
+                <label class="radio" for="grad_status-5">
+                  <input type="radio" name="grad_status" id="grad_status-5" value="graduate">
+                  Graduate Student
+                </label>
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-5 col-md-offset-1 control-label" for="github">Your GitHub</label>  
+              <div class="col-md-5">
+              <input id="github" name="github" type="text" placeholder="@you" class="form-control input-md">
+              <span class="help-block">A link to your profile or your handle are both acceptable.</span>  
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-5 col-md-offset-1 control-label" for="linkedin">Your LinkedIn</label>  
+              <div class="col-md-5">
+              <input id="linkedin" name="linkedin" type="text" placeholder="https://www.linkedin.com/profile/@you" class="form-control input-md">
+              <span class="help-block">A link to your profile is preferred.</span>  
+              </div>
+            </div>
+
+                                      <!-- Textarea -->
+            <div id="noob-form" class="contextual-form form-group ">
+              <label class="experience col-md-100  col-md-offset-1 control-label" for="new_hacker_thoughts">How do you want to start your hackathon journey?</label>
+              <div class="col-md-100">                     
+                <textarea class=" experience form-control" id="new_hacker_thoughts" name="new_hacker_thoughts"></textarea>
+              </div>
+            </div>
+            
+            <!-- Button -->
+            <div class="form-group">
+              <div class="col-md-4 col-md-offset-4">
+                <button id="submit" type="submit" name="submit" data-loading-text="Submitting..." class="btn btn-primary">Let's Go</button>
+              </div>
+            </div>
+            </fieldset>
+        </form>
         </section>
-        <section class="row" id="faq-secondary" style="padding: 0; overflow: hidden; margin-bottom: 0;">
+      </article>
+      <div class="grey-triangle-right"><img src="img/micro/grey-triangle-right.png" alt=""></div>
+      <div class="grey-triangle-left"><img src="img/micro/grey-triangle-left.png" alt=""></div>
+    </section>
+
+
+        
+      <!--         <section class="row" id="faq-secondary" style="padding: 0; overflow: hidden; margin-bottom: 0;">
           <div id="faq-pane" class="slide-animated faq-rolled colorified" style="position: relative;">
             <div class="row">
               <div class="col-md-4">
@@ -198,7 +231,7 @@ mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
             <div class="row">
               <div class="col-md-4">
                 <h3>...I live far away?</h3>
-                <p>We're willing to reimburse up to $300, depending on location, availability of transportation, and experience. We recommend you complete the application first, and after hearing back from us, consider travel logistics.</p>
+                <p>We're willing to reimburse up to $300, depending on location, availability of transportation, and experience. We recommend you complete the application first, and after hearing   from us, consider travel logistics.</p>
               </div>
               <div class="col-md-4">
                 <h3>...I don't want to hack?</h3>
@@ -250,17 +283,15 @@ mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
               </div>
             </div>
           </div>
-        </section>
+        </section> 
         <section id="apply">
           <form class="form-horizontal">
             <fieldset>
 
-              <!-- Form Name -->
-              <legend>Apply</legend>
+               <legend>Apply</legend>
 
               <h3 style="margin-top: 0; margin-bottom: 40px; text-align: center;">We've closed our first round of applications, but you can still apply in case spots open up.</h3>
 
-              <!-- Text input-->
               <div class="form-group">
                 <label class="col-md-5 col-md-offset-1 control-label" for="name">Your Name</label>  
                 <div class="col-md-5">
@@ -268,7 +299,6 @@ mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
                 </div>
               </div>
 
-              <!-- Text input-->
               <div class="form-group">
                 <label class="col-md-5 col-md-offset-1 control-label" for="email">Your Email</label>  
                 <div class="col-md-5">
@@ -277,7 +307,6 @@ mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
                 </div>
               </div>
 
-              <!-- Text input-->
               <div class="form-group">
                 <label class="col-md-5 col-md-offset-1 control-label" for="major">Your Major</label>  
                 <div class="col-md-5">
@@ -286,7 +315,6 @@ mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
                 </div>
               </div>
 
-              <!-- Text input-->
               <div class="form-group">
                 <label class="col-md-5 col-md-offset-1 control-label" for="school">Your School</label>  
                 <div class="col-md-5">
@@ -294,7 +322,6 @@ mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
                 </div>
               </div>
 
-              <!-- Multiple Radios (inline) -->
               <div class="form-group">
                 <label class="col-md-5 col-md-offset-1 control-label" for="gender">Gender?</label>
                 <div class="col-md-5"> 
@@ -313,7 +340,6 @@ mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
                 </div>
               </div>
 
-              <!-- Multiple Radios (inline) -->
               <div class="form-group">
                 <label class="col-md-5 col-md-offset-1 control-label" for="grad_status">What grade will you be in this Fall?</label>
                 <div class="col-md-5"> 
@@ -344,7 +370,6 @@ mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
                 </div>
               </div>
 
-              <!-- Multiple Radios (inline) -->
               <div class="form-group">
                 <label class="col-md-5 col-md-offset-1 control-label" for="experienced_hacker">Will this be your first hackathon?</label>
                 <div class="col-md-5"> 
@@ -360,7 +385,6 @@ mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
               </div>
 
               <div id="experienced-form" class="contextual-form hidden fade-animated">
-                <!-- Text input-->
                 <div class="form-group">
                   <label class="col-md-5 col-md-offset-1 control-label" for="last_hackathon_attended">Which hackathon did you last attend?</label>  
                   <div class="col-md-5">
@@ -369,7 +393,6 @@ mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
                   </div>
                 </div>
 
-                <!-- Textarea -->
                 <div class="form-group">
                   <label class="col-md-5 col-md-offset-1 control-label" for="experience">Hackathons are about imagining and building ideas in real-time. What do you need to build something EPIC at MHacks IV?</label>
                   <div class="col-md-5">                     
@@ -377,7 +400,6 @@ mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
                   </div>
                 </div>
 
-                <!-- Multiple Radios (inline) -->
                 <div class="form-group">
                   <label class="col-md-5 col-md-offset-1 control-label" for="possible_mentor">Would you consider spending some time mentoring during MHacks?</label>
                   <div class="col-md-5"> 
@@ -393,7 +415,6 @@ mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
                 </div>
               </div>
 
-              <!-- Textarea -->
               <div id="noob-form" class="contextual-form form-group fade-animated">
                 <label class="col-md-5 col-md-offset-1 control-label" for="new_hacker_thoughts">MHacks IV is about taking risks, learning and creating amazing things. How do you want to start your hackathon journey?</label>
                 <div class="col-md-5">                     
@@ -401,7 +422,6 @@ mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
                 </div>
               </div>
 
-              <!-- Text input-->
               <div class="form-group">
                 <label class="col-md-5 col-md-offset-1 control-label" for="github">Your GitHub</label>  
                 <div class="col-md-5">
@@ -410,7 +430,6 @@ mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
                 </div>
               </div>
 
-              <!-- Text input-->
               <div class="form-group">
                 <label class="col-md-5 col-md-offset-1 control-label" for="linkedin">Your LinkedIn</label>  
                 <div class="col-md-5">
@@ -419,7 +438,6 @@ mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
                 </div>
               </div>
 
-              <!-- Multiple Radios (inline) -->
               <div class="form-group">
                 <label class="col-md-5 col-md-offset-1 control-label" for="requests_reimbursement">Will you need a travel reimbursement/arrangement to attend MHacks?</label>
                 <div class="col-md-5"> 
@@ -434,7 +452,6 @@ mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
                 </div>
               </div>
 
-              <!-- Button -->
               <div class="form-group">
                 <div class="col-md-4 col-md-offset-4">
                   <button id="submit" type="submit" name="submit" data-loading-text="Submitting..." class="btn btn-primary">Let's Go</button>
@@ -444,667 +461,48 @@ mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
             </fieldset>
           </form>
         </section>
-        <section id="sponsors">
-          <div class="row">
-            <div class="col-md-12">
-              <h2 style="color: #191919;">Sponsors</h2>
-            </div>
-          </div>
-          <div class="row unobtanium">
-            <div class="col-md-10 col-md-offset-1">
-              <!-- 
-  ___        _                
- / _ \ _   _(_)_  _____ _   _ 
-| | | | | | | \ \/ / _ \ | | |
-| |_| | |_| | |>  <  __/ |_| |
- \__\_\\__,_|_/_/\_\___|\__, |
-                        |___/ 
-               -->
-              <a class="sponsor" target="_blank" href="https://www.quixey.com/" style="background-image: url(/img/sponsors/quixey/basic.png);"></a>
-            </div>
-          </div>
-          <div class="row gold">
-            <div class="col-md-6">
-            <!--
-    _                _          ___              
-   / \   _ __  _ __ | | ___    |_ _|_ __   ___   
-  / _ \ | '_ \| '_ \| |/ _ \    | || '_ \ / __|  
- / ___ \| |_) | |_) | |  __/_   | || | | | (__ _ 
-/_/   \_\ .__/| .__/|_|\___( ) |___|_| |_|\___(_)
-        |_|   |_|          |/                    
-            -->
-              <a class="sponsor" target="_blank" href="http://www.apple.com/jobs/students" style="background-image: url(/img/sponsors/apple/rasterized.png); height: 110px; margin-top: 20px; margin-bottom: 60px;"></a>
-            </div>
-            <div class="col-md-6">
-            <!-- 
- ____  _                       _                    
-| __ )| | ___   ___  _ __ ___ | |__   ___ _ __ __ _ 
-|  _ \| |/ _ \ / _ \| '_ ` _ \| '_ \ / _ \ '__/ _` |
-| |_) | | (_) | (_) | | | | | | |_) |  __/ | | (_| |
-|____/|_|\___/ \___/|_| |_| |_|_.__/ \___|_|  \__, |
-                                              |___/ 
-             -->
-              <a class="sponsor" target="_blank" href="http://www.bloomberg.com/" style="background-image: url(/img/sponsors/bloomberg/standard_transparent.png);"></a>
-            </div>
-          </div>
-          <div class="row gold">
-            <div class="col-md-6">
-            <!--
-  ____ _                    _           
- / ___| |__  _ __ _   _ ___| | ___ _ __ 
-| |   | '_ \| '__| | | / __| |/ _ \ '__|
-| |___| | | | |  | |_| \__ \ |  __/ |   
- \____|_| |_|_|   \__, |___/_|\___|_|   
-                  |___/                 
-            -->
-              <a class="sponsor" target="_blank" href="http://www.chryslercareers.com/" style="background-image: url(/img/sponsors/chrysler/standard.png); border-top: 20px solid transparent;"></a>
-            </div>
-            <div class="col-md-6">
-            <!-- 
-       _  __      
-  __ _/ |/ /_ ____
- / _` | | '_ \_  /
-| (_| | | (_) / / 
- \__,_|_|\___/___|
-             -->
-              <a class="sponsor" target="_blank" href="http://a16z.com/" style="background-image: url(/img/sponsors/a16z/new_grey_transparent.png); border-top: 20px solid transparent; border-bottom: 30px solid transparent;"></a>
-            </div>
-          </div>
-          <div class="row gold">
-            <div class="col-md-6">
-            <!-- 
-  ____            _ _        _    ___             
- / ___|__ _ _ __ (_) |_ __ _| |  / _ \ _ __   ___ 
-| |   / _` | '_ \| | __/ _` | | | | | | '_ \ / _ \
-| |__| (_| | |_) | | || (_| | | | |_| | | | |  __/
- \____\__,_| .__/|_|\__\__,_|_|  \___/|_| |_|\___|
-           |_|                                    
-             -->
-              <a class="sponsor" target="_blank" href="https://www.capitalone.com/" style="background-image: url(/img/sponsors/capitalone/better.png);"></a>
-            </div>
-            <div class="col-md-6">
-            <!--
- _____              _                 _              ____                     
-|  ___|_ _  ___ ___| |__   ___   ___ | | __    _    |  _ \ __ _ _ __ ___  ___ 
-| |_ / _` |/ __/ _ \ '_ \ / _ \ / _ \| |/ /  _| |_  | |_) / _` | '__/ __|/ _ \
-|  _| (_| | (_|  __/ |_) | (_) | (_) |   <  |_   _| |  __/ (_| | |  \__ \  __/
-|_|  \__,_|\___\___|_.__/ \___/ \___/|_|\_\   |_|   |_|   \__,_|_|  |___/\___|
-            -->
-              <a class="sponsor" target="_blank" href="https://parse.com/" style="background-image: url(/img/sponsors/fbparse/combined.png);"></a>
-            </div>
-          </div>
-          <div class="row gold">
-            <div class="col-md-6 col-md-offset-3">
-            <!-- 
-  ____          _ _ _ _ _         
- / ___|___   __| (_) (_) |_ _   _ 
-| |   / _ \ / _` | | | | __| | | |
-| |__| (_) | (_| | | | | |_| |_| |
- \____\___/ \__,_|_|_|_|\__|\__, |
-                            |___/ 
-             -->
-              <a class="sponsor" target="_blank" href="https://codility.com/" style="background-image: url(/img/sponsors/codility/transparent.png);"></a>
-            </div>
-          </div>
-          <div class="row silver">
-            <div class="col-sm-4">
-            <!-- 
- ____  _ _ _            
-|  _ \(_) | | __ _ _ __ 
-| |_) | | | |/ _` | '__|
-|  __/| | | | (_| | |   
-|_|   |_|_|_|\__,_|_|   
-             -->
-              <a class="sponsor" target="_blank" href="http://pillartechnology.com/careers/" style="background-image: url(/img/sponsors/pillar/standard.png); border: 10px solid transparent;"></a>
-            </div>
-            <div class="col-sm-4">
-            <!-- 
- _   _ _               
-| | | | |__   ___ _ __ 
-| | | | '_ \ / _ \ '__|
-| |_| | |_) |  __/ |   
- \___/|_.__/ \___|_|
-             -->
-              <a class="sponsor" target="_blank" href="https://www.uber.com/" style="background-image: url(/img/sponsors/uber/logotype_black.png);"></a>
-            </div>
-            <div class="col-sm-4">
-            <!-- 
-    _                     _         _                  ____  ____   _    ____  _  __
-   / \   _ __  _ __      / \   _ __| |__   ___  _ __  / ___||  _ \ / \  |  _ \| |/ /
-  / _ \ | '_ \| '_ \    / _ \ | '__| '_ \ / _ \| '__| \___ \| |_) / _ \ | |_) | ' / 
- / ___ \| | | | | | |  / ___ \| |  | |_) | (_) | |     ___) |  __/ ___ \|  _ <| . \ 
-/_/   \_\_| |_|_| |_| /_/   \_\_|  |_.__/ \___/|_|    |____/|_| /_/   \_\_| \_\_|\_\
-             -->
-              <a class="sponsor" target="_blank" href="http://www.annarborusa.org/" style="background-image: url(/img/sponsors/spark/standard.png); border: 10px solid transparent;"></a>
-            </div>
-          </div>
-          <div class="row silver">
-            <div class="col-sm-4">
-            <!-- 
- __  __           _             
-|  \/  | _____  _| |_ _ __ __ _ 
-| |\/| |/ _ \ \/ / __| '__/ _` |
-| |  | | (_) >  <| |_| | | (_| |
-|_|  |_|\___/_/\_\\__|_|  \__,_|
-             -->
-              <a class="sponsor" target="_blank" href="http://developer.moxtra.com/moxo/index.html" style="background-image: url(/img/sponsors/moxtra/standard.png);"></a>
-            </div>
-            <div class="col-sm-4">
-            <!-- 
- ____       _              ____            _ _        _ 
-|  _ \ _ __(_)_   _____   / ___|__ _ _ __ (_) |_ __ _| |
-| | | | '__| \ \ / / _ \ | |   / _` | '_ \| | __/ _` | |
-| |_| | |  | |\ V /  __/ | |__| (_| | |_) | | || (_| | |
-|____/|_|  |_| \_/ \___|  \____\__,_| .__/|_|\__\__,_|_|
-                                    |_|                 
-             -->
-              <a class="sponsor" target="_blank" href="http://www.drivecapital.com/" style="background-image: url(/img/sponsors/drive/standard.png);"></a>
-            </div>
-            <div class="col-sm-4">
-            <!-- 
- _____         _     ____            _ _   _     
-|_   _|__  ___| |__ / ___| _ __ ___ (_) |_| |__  
-  | |/ _ \/ __| '_ \\___ \| '_ ` _ \| | __| '_ \ 
-  | |  __/ (__| | | |___) | | | | | | | |_| | | |
-  |_|\___|\___|_| |_|____/|_| |_| |_|_|\__|_| |_|
-             -->
-              <a class="sponsor" target="_blank" href="http://www.techsmith.com/" style="background-image: url(/img/sponsors/tsc/transparent.png);"></a>
-            </div>
-          </div>
-          <div class="row silver">
-            <div class="col-sm-4">
-            <!-- 
- _  ___ _    
-| |/ (_) | __
-| ' /| | |/ /
-| . \| |   < 
-|_|\_\_|_|\_\
-             -->
-              <a class="sponsor" target="_blank" href="http://www.kik.com/careers" style="background-image: url(/img/sponsors/kik/standard_transparent.png);"></a>
-            </div>
-            <div class="col-sm-4">
-            <!-- 
-  ____       _     _                         ____             _         
- / ___| ___ | | __| |_ __ ___   __ _ _ __   / ___|  __ _  ___| |__  ___ 
-| |  _ / _ \| |/ _` | '_ ` _ \ / _` | '_ \  \___ \ / _` |/ __| '_ \/ __|
-| |_| | (_) | | (_| | | | | | | (_| | | | |  ___) | (_| | (__| | | \__ \
- \____|\___/|_|\__,_|_| |_| |_|\__,_|_| |_| |____/ \__,_|\___|_| |_|___/
-             -->
-              <a class="sponsor" target="_blank" href="http://www.goldmansachs.com/careers/" style="background-image: url(/img/sponsors/goldmansachs/signature_black.png);"></a>
-            </div>
-            <div class="col-sm-4">
-            <!-- 
- ____                  _                 
-|  _ \  ___  _ __ ___ (_)_ __   ___  ___ 
-| | | |/ _ \| '_ ` _ \| | '_ \ / _ \/ __|
-| |_| | (_) | | | | | | | | | | (_) \__ \
-|____/ \___/|_| |_| |_|_|_| |_|\___/|___/  
-             -->
-              <a class="sponsor" target="_blank" href="http://www.dominos.com/" style="background-image: url(/img/sponsors/dominos/standard.png);"></a>
-            </div>
-          </div>
-          <div class="row silver">
-            <div class="col-sm-4">
-            <!-- 
-    _                _ 
-   / \   ___ ___ ___| |
-  / _ \ / __/ __/ _ \ |
- / ___ \ (_| (_|  __/ |
-/_/   \_\___\___\___|_|
-             -->
-              <a class="sponsor" target="_blank" href="http://www.accel.com/" style="background-image: url(/img/sponsors/accel/standard.png);"></a>
-            </div>
-            <div class="col-sm-4">
-            <!-- 
- ____  _        _         _____                    
-/ ___|| |_ __ _| |_ ___  |  ___|_ _ _ __ _ __ ___  
-\___ \| __/ _` | __/ _ \ | |_ / _` | '__| '_ ` _ \ 
- ___) | || (_| | ||  __/ |  _| (_| | |  | | | | | |
-|____/ \__\__,_|\__\___| |_|  \__,_|_|  |_| |_| |_|
-
-             -->
-              <a class="sponsor" target="_blank" href="http://www.statefarm.com/it" style="background-image: url(/img/sponsors/statefarm/standard.png);"></a>
-            </div>
-            <div class="col-sm-4">
-            <!-- 
- ____  _            __  __ _      
-| __ )| |_   _  ___|  \/  (_)_  __
-|  _ \| | | | |/ _ \ |\/| | \ \/ /
-| |_) | | |_| |  __/ |  | | |>  < 
-|____/|_|\__,_|\___|_|  |_|_/_/\_\
-             -->
-              <a class="sponsor" target="_blank" href="https://ace.ng.bluemix.net/" style="background-image: url(/img/sponsors/bluemix/standard.png);"></a>
-            </div>
-          </div>
-          <div class="row silver">
-            <div class="col-sm-4">
-            <!-- 
-  ____                   _      
- / ___| ___   ___   __ _| | ___ 
-| |  _ / _ \ / _ \ / _` | |/ _ \
-| |_| | (_) | (_) | (_| | |  __/
- \____|\___/ \___/ \__, |_|\___|
-                   |___/        
-             -->
-              <a class="sponsor" target="_blank" href="https://www.google.com/" style="background-image: url(/img/sponsors/google/logo11w.png);"></a>
-            </div>
-            <div class="col-sm-4">
-            <!-- 
- _  ______   ____ ____  
-| |/ /  _ \ / ___| __ ) 
-| ' /| |_) | |   |  _ \ 
-| . \|  __/| |___| |_) |
-|_|\_\_|    \____|____/         
-             -->
-              <a class="sponsor" target="_blank" href="http://kpcbfellows.com/" style="background-image: url(/img/sponsors/kpcb/new.png);"></a>
-            </div>
-            <div class="col-sm-4">
-            <!--
- __  __ _                           __ _   
-|  \/  (_) ___ _ __ ___  ___  ___  / _| |_ 
-| |\/| | |/ __| '__/ _ \/ __|/ _ \| |_| __|
-| |  | | | (__| | | (_) \__ \ (_) |  _| |_ 
-|_|  |_|_|\___|_|  \___/|___/\___/|_|  \__|
-             -->
-              <a class="sponsor" target="_blank" href="http://careers.microsoft.com/careers/en/us/collegehome.aspx" style="background-image: url(/img/sponsors/microsoft/standard.png);"></a>
-            </div>
-          </div>
-          <div class="row silver">
-            <div class="col-sm-4 col-sm-offset-4">
-            <!--
- _   _ __  __ _      _        ____ ____  _____ 
-| | | |  \/  (_) ___| |__    / ___/ ___|| ____|
-| | | | |\/| | |/ __| '_ \  | |   \___ \|  _|  
-| |_| | |  | | | (__| | | | | |___ ___) | |___ 
- \___/|_|  |_|_|\___|_| |_|  \____|____/|_____|
-            -->
-              <a class="sponsor" target="_blank" href="https://www.cse.umich.edu/" style="background-image: url(/img/sponsors/cse/rasterized.png);"></a>
-            </div>
-          </div>
-          <div class="row bronze">
-            <div class="col-sm-6">
-              <div class="col-xs-6">
-              <!--
- _   _           _   
-| \ | | ___  ___| |_ 
-|  \| |/ _ \/ __| __|
-| |\  |  __/\__ \ |_ 
-|_| \_|\___||___/\__|
-              -->
-                <a class="sponsor" target="_blank" href="https://nest.com/" style="background-image: url(/img/sponsors/nest/standard.png);"></a>
-              </div>
-              <div class="col-xs-6">
-              <!-- 
- _____ _          _                    
-|  ___(_)_ __ ___| |__   __ _ ___  ___ 
-| |_  | | '__/ _ \ '_ \ / _` / __|/ _ \
-|  _| | | | |  __/ |_) | (_| \__ \  __/
-|_|   |_|_|  \___|_.__/ \__,_|___/\___|
-               -->
-                <a class="sponsor" target="_blank" href="https://www.firebase.com/?utm_source=sponsorship&amp;utm_medium=website&amp;utm_campaign=mhacks" style="background-image: url(/img/sponsors/firebase/standard_transparent.png);"></a>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="col-xs-6">
-              <!-- 
-  ___             __  __             _   _     
- / _ \ _ __   ___|  \/  | ___  _ __ | |_| |__  
-| | | | '_ \ / _ \ |\/| |/ _ \| '_ \| __| '_ \ 
-| |_| | | | |  __/ |  | | (_) | | | | |_| | | |
- \___/|_| |_|\___|_|  |_|\___/|_| |_|\__|_| |_|
-               -->
-                <a class="sponsor" target="_blank" href="https://onemonth.com/" style="background-image: url(/img/sponsors/onemonth/standard_transparent.png);"></a>
-              </div>
-              <div class="col-xs-6">
-              <!-- 
- _           __ _   
-| |   _   _ / _| |_ 
-| |  | | | | |_| __|
-| |__| |_| |  _| |_ 
-|_____\__, |_|  \__|
-      |___/         
-               -->
-                <a class="sponsor" target="_blank" href="https://www.lyft.com/" style="background-image: url(/img/sponsors/lyft/logo_teal.png); border: 10px solid transparent;"></a>
-              </div>
-            </div>
-          </div>
-          <div class="row bronze">
-            <div class="col-sm-6">
-              <div class="col-xs-6">
-              <!-- 
- __  __           _               
-|  \/  | ___  ___| |_ _   _ _ __  
-| |\/| |/ _ \/ _ \ __| | | | '_ \ 
-| |  | |  __/  __/ |_| |_| | |_) |
-|_|  |_|\___|\___|\__|\__,_| .__/ 
-                           |_|    
-               -->
-                <a class="sponsor" target="_blank" href="http://www.meetup.com/jobs/" style="background-image: url(/img/sponsors/meetup/standard_transparent.png);"></a>
-              </div>
-              <div class="col-xs-6">
-              <!-- 
- _          _     
-| |    ___ | |__  
-| |   / _ \| '_ \ 
-| |__| (_) | |_) |
-|_____\___/|_.__/ 
-               -->
-                <a class="sponsor" target="_blank" href="https://www.lob.com/" style="background-image: url(/img/sponsors/lob/transparent.png);"></a>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="col-xs-6">
-              <!-- 
- _____                    _                    
-|  ___|_ _ _ __ _ __ ___ | |    ___   __ _ ___ 
-| |_ / _` | '__| '_ ` _ \| |   / _ \ / _` / __|
-|  _| (_| | |  | | | | | | |__| (_) | (_| \__ \
-|_|  \__,_|_|  |_| |_| |_|_____\___/ \__, |___/
-                                     |___/     
-               -->
-                <a class="sponsor" target="_blank" href="https://farmlogs.com/" style="background-image: url(/img/sponsors/farmlogs/logotype_green.png);"></a>
-              </div>
-              <div class="col-xs-6">
-              <!-- 
- _   _       _               ____            _  __ _      
-| | | |_ __ (_) ___  _ __   |  _ \ __ _  ___(_)/ _(_) ___ 
-| | | | '_ \| |/ _ \| '_ \  | |_) / _` |/ __| | |_| |/ __|
-| |_| | | | | | (_) | | | | |  __/ (_| | (__| |  _| | (__ 
- \___/|_| |_|_|\___/|_| |_| |_|   \__,_|\___|_|_| |_|\___| 
-               -->
-                <a class="sponsor" target="_blank" href="https://up.jobs/students.html" style="background-image: url(/img/sponsors/unionpacific/standard_transparent.png);"></a>
-              </div>
-            </div>
-          </div>
-          <div class="row bronze">
-            <div class="col-sm-6">
-              <div class="col-xs-6">
-              <!--
-__   __    
-\ \ / /__  
- \ V / _ \ 
-  | | (_) |
-  |_|\___/ 
-              -->
-                <a class="sponsor" target="_blank" href="http://www.justyo.co/" style="background-image: url(/img/sponsors/yo/standard.jpg);"></a>
-              </div>
-              <div class="col-xs-6">
-              <!--
-      ____              
-  ___| __ )  __ _ _   _ 
- / _ \  _ \ / _` | | | |
-|  __/ |_) | (_| | |_| |
- \___|____/ \__,_|\__, |
-                  |___/ 
-              -->
-                <a class="sponsor" target="_blank" href="http://www.ebay.com/" style="background-image: url(/img/sponsors/ebay/transparent.png);"></a>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="col-xs-6">
-              <!-- 
- _____ _____ __  __  ____ 
-| ____|_   _|  \/  |/ ___|
-|  _|   | | | |\/| | |    
-| |___  | | | |  | | |___ 
-|_____| |_| |_|  |_|\____|
-               -->
-                <a class="sponsor" target="_blank" href="http://www.salesforce.com/marketing-cloud/overview/" style="background-image: url(/img/sponsors/etmc/etmc_transparent.png);"></a>
-              </div>
-              <div class="col-xs-6">
-              <!--
- ____       _                 _      
-| __ ) _ __(_) __ _  __ _  __| | ___ 
-|  _ \| '__| |/ _` |/ _` |/ _` |/ _ \
-| |_) | |  | | (_| | (_| | (_| |  __/
-|____/|_|  |_|\__, |\__,_|\__,_|\___|
-              |___/                  
-               -->
-                <a class="sponsor" target="_blank" href="https://brigade.com/" style="background-image: url(/img/sponsors/brigade/square.jpg);"></a>
-              </div>
-            </div>
-          </div>
-          <div class="row bronze">
-            <div class="col-sm-6">
-              <div class="col-xs-6">
-              <!--
- _____ _           _           _        _          _         
-|_   _| |__   __ _| |_ __ ___ (_) ___  | |    __ _| |__  ___ 
-  | | | '_ \ / _` | | '_ ` _ \| |/ __| | |   / _` | '_ \/ __|
-  | | | | | | (_| | | | | | | | | (__  | |__| (_| | |_) \__ \
-  |_| |_| |_|\__,_|_|_| |_| |_|_|\___| |_____\__,_|_.__/|___/
-              -->
-                <a class="sponsor" target="_blank" href="https://www.thalmic.com/" style="background-image: url(/img/sponsors/thalmic/standard.png);"></a>
-              </div>
-              <div class="col-xs-6">
-              <!--
- ____      _       _       ___ ___  
-|  _ \ ___| | __ _| |_ ___|_ _/ _ \ 
-| |_) / _ \ |/ _` | __/ _ \| | | | |
-|  _ <  __/ | (_| | ||  __/| | |_| |
-|_| \_\___|_|\__,_|\__\___|___\__\_\
-              -->
-                <a class="sponsor" target="_blank" href="https://www.relateiq.com/" style="background-image: url(/img/sponsors/relateiq/standard.png);"></a>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="col-xs-6">
-              <!-- 
- _   _                 _     _           _        
-| | | | __ _ _ __   __| |___| |__   __ _| | _____ 
-| |_| |/ _` | '_ \ / _` / __| '_ \ / _` | |/ / _ \
-|  _  | (_| | | | | (_| \__ \ | | | (_| |   <  __/
-|_| |_|\__,_|_| |_|\__,_|___/_| |_|\__,_|_|\_\___|
-               -->
-                <a class="sponsor" target="_blank" href="http://joinhandshake.com/" style="background-image: url(/img/sponsors/handshake/vertical.png);"></a>
-              </div>
-              <div class="col-xs-6">
-              <!--
- ____ _____ _____ 
-|  _ \_   _| ____|
-| | | || | |  _|  
-| |_| || | | |___ 
-|____/ |_| |_____|
-              -->
-                <a class="sponsor" target="_blank" href="https://www2.dteenergy.com/wps/portal/dte/aboutus/careers/" style="background-image: url(/img/sponsors/dte/standard.png);"></a>
-              </div>
-            </div>
-          </div>
-          <div class="row bronze">
-            <div class="col-sm-6">
-              <div class="col-xs-6">
-              <!--
- _____ _     _      _   _____                     _       _   _             
-|_   _| |__ (_) ___| | |  ___|__  _   _ _ __   __| | __ _| |_(_) ___  _ __  
-  | | | '_ \| |/ _ \ | | |_ / _ \| | | | '_ \ / _` |/ _` | __| |/ _ \| '_ \ 
-  | | | | | | |  __/ | |  _| (_) | |_| | | | | (_| | (_| | |_| | (_) | | | |
-  |_| |_| |_|_|\___|_| |_|  \___/ \__,_|_| |_|\__,_|\__,_|\__|_|\___/|_| |_|
-              -->
-                <a class="sponsor" target="_blank" href="http://thielfoundation.org/" style="background-image: url(/img/sponsors/thiel/dark.png);"></a>
-              </div>
-              <div class="col-xs-6">
-              <!--
-     _             _                 _                            
- ___| |_ __ _  ___| | _______  _____| |__   __ _ _ __   __ _  ___ 
-/ __| __/ _` |/ __| |/ / _ \ \/ / __| '_ \ / _` | '_ \ / _` |/ _ \
-\__ \ || (_| | (__|   <  __/>  < (__| | | | (_| | | | | (_| |  __/
-|___/\__\__,_|\___|_|\_\___/_/\_\___|_| |_|\__,_|_| |_|\__, |\___|
-                                                       |___/      
-              -->
-                <a class="sponsor" target="_blank" href="http://stackoverflow.com/" style="background-image: url(/img/sponsors/stackexchange/stackoverflow.png);"></a>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="col-xs-6">
-              <!--
- ___           _               _ 
-|_ _|_ __   __| | ___  ___  __| |
- | || '_ \ / _` |/ _ \/ _ \/ _` |
- | || | | | (_| |  __/  __/ (_| |
-|___|_| |_|\__,_|\___|\___|\__,_|
-              -->
-                <a class="sponsor" target="_blank" href="http://www.indeed.com/" style="background-image: url(/img/sponsors/indeed/primary_logotype_tagline.png);"></a>
-              </div>
-              <div class="col-xs-6">
-              <!--
- ______                        
-|__  (_) __ _  __ _  ___  ___  
-  / /| |/ _` |/ _` |/ _ \/ _ \ 
- / /_| | (_| | (_| |  __/ (_) |
-/____|_|\__, |\__, |\___|\___/ 
-        |___/ |___/            
-              -->
-                <a class="sponsor" target="_blank" href="https://www.ziggeo.com/" style="background-image: url(/img/sponsors/ziggeo/standard.png);"></a>
-              </div>
-            </div>
-          </div>
-          <div class="row bronze">
-            <div class="col-sm-6">
-              <div class="col-xs-6">
-              <!--
- __  __ _     _   _ 
-|  \/  | |   | | | |
-| |\/| | |   | |_| |
-| |  | | |___|  _  |
-|_|  |_|_____|_| |_|
-              -->
-                <a class="sponsor" target="_blank" href="http://mlh.io/" style="background-image: url(/img/sponsors/mlh/standard.png);"></a>
-              </div>
-              <div class="col-xs-6">
-              <!--
- _____          _ _ _       
-|_   _|_      _(_) (_) ___  
-  | | \ \ /\ / / | | |/ _ \ 
-  | |  \ V  V /| | | | (_) |
-  |_|   \_/\_/ |_|_|_|\___/   
-              -->
-                <a class="sponsor" target="_blank" href="http://bit.ly/1piG0pz" style="background-image: url(/img/sponsors/mlh/twilio/standard.png);"></a>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="col-xs-6">
-              <!--
- __  __                         ____  ____  
-|  \/  | ___  _ __   __ _  ___ |  _ \| __ ) 
-| |\/| |/ _ \| '_ \ / _` |/ _ \| | | |  _ \ 
-| |  | | (_) | | | | (_| | (_) | |_| | |_) |
-|_|  |_|\___/|_| |_|\__, |\___/|____/|____/ 
-                    |___/                            
-              -->
-                <a class="sponsor" target="_blank" href="http://www.mongodb.org/" style="background-image: url(/img/sponsors/mlh/mongodb/transparent.png);"></a>
-              </div>
-              <div class="col-xs-6">
-              <!--
- __  __           _                     
-|  \/  | __ _ ___| |__   ___ _ __ _   _ 
-| |\/| |/ _` / __| '_ \ / _ \ '__| | | |
-| |  | | (_| \__ \ | | |  __/ |  | |_| |
-|_|  |_|\__,_|___/_| |_|\___|_|   \__, |
-                                  |___/ 
-              -->
-                <a class="sponsor" target="_blank" href="http://dev.mashery.com/" style="background-image: url(/img/sponsors/mlh/mashery/dev_platform.png);"></a>
-              </div>
-            </div>
-          </div>
-          <div class="row bronze">
-            <div class="col-sm-10 col-sm-offset-1" style="padding: 0;">
-              <div class="col-sm-8" style="padding: 0;">
-                <div class="col-xs-6">
-                <!--
-   ____                      __  __
-  / ___| _ __   __ _  ___ ___\ \/ /
-  \___ \| '_ \ / _` |/ __/ _ \\  / 
-   ___) | |_) | (_| | (_|  __//  \ 
-  |____/| .__/ \__,_|\___\___/_/\_\
-        |_|                        
-                -->
-                  <a class="sponsor" target="_blank" href="http://www.spacex.com/" style="background-image: url(/img/sponsors/spacex/rasterized.png);"></a>
-                </div>
-                <div class="col-xs-6" style="padding: 0;">
-                <!--
-   ____             ____       _ 
-  |  _ \ __ _ _   _|  _ \ __ _| |
-  | |_) / _` | | | | |_) / _` | |
-  |  __/ (_| | |_| |  __/ (_| | |
-  |_|   \__,_|\__, |_|   \__,_|_|
-              |___/              
-                -->
-                  <a class="sponsor" target="_blank" href="https://developer.paypal.com/" style="background-image: url(/img/sponsors/mlh/paypal/transparent.png);"></a>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="col-xs-12">
-                <!--
-   ____                 _  ____      _     _ 
-  / ___|  ___ _ __   __| |/ ___|_ __(_) __| |
-  \___ \ / _ \ '_ \ / _` | |  _| '__| |/ _` |
-   ___) |  __/ | | | (_| | |_| | |  | | (_| |
-  |____/ \___|_| |_|\__,_|\____|_|  |_|\__,_|
-                -->
-                  <a class="sponsor" target="_blank" href="https://sendgrid.com/docs/index.html" style="background-image: url(/img/sponsors/mlh/sendgrid/horizontal.png);"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        -->
+        
         <section id="social">
           <div class="row" style="height: 40px;">
-            <a href="https://www.facebook.com/MHacksHackathon" target="_blank" class="footer-logo social-logo mixpanel-tracked" type="facebook-link" style="margin-left: -100px; background-image: url(/img/circle_fb.png);"></a>
-            <a href="https://twitter.com/mhacks" target="_blank" class="footer-logo mixpanel-tracked" type="twitter-link" style="margin-left: -50px; background-image: url(/img/circle_twitter.png);"></a>
-            <a href="http://blog.mhacks.org" target="_blank" class="footer-logo mixpanel-tracked" type="blog-link" style="margin-left: 0px; background-image: url(/img/circle_blog.png);"></a>
-            <a href="https://plus.google.com/115874279567400942805" rel="publisher" target="_blank" class="footer-logo mixpanel-tracked" type="googleplus-link" style="margin-left: 50px; background-image: url(/img/circle_googleplus.png);"></a>
+            <a href="https://www.facebook.com/app.that" target="_blank" class="footer-logo social-logo mixpanel-tracked" type="facebook-link" style="margin-left: -100px; background-image: url(./img/circle_fb.png);"></a>
+            <a href="https://twitter.com/mhacks" target="_blank" class="footer-logo mixpanel-tracked" type="twitter-link" style="margin-left: -50px; background-image: url(./img/circle_twitter.png);"></a>
+            <a href="http://blog.mhacks.org" target="_blank" class="footer-logo mixpanel-tracked" type="blog-link" style="margin-left: 0px; background-image: url(./img/circle_blog.png);"></a>
+            <a href="https://plus.google.com/115874279567400942805" rel="publisher" target="_blank" class="footer-logo mixpanel-tracked" type="googleplus-link" style="margin-left: 50px; background-image: url(./img/circle_googleplus.png);"></a>
           </div>
         </section>
         <section id="sponsor-email" style="text-align: center;">
           <p>Have any questions? Interested in sponsorship?</p>
-          <h3 style="font-size: 32px;"><a href="mailto:hackathon@umich.edu" >Contact us!</a></h3>
+          <h3 style="font-size: 32px;"><a href="mailto:micro@nwhacks.com" >Contact us!</a></h3>
         </section>
         <section id="footer">
           <div class="row" style="margin-top: 16px;">
             <div class="col-md-3 col-md-offset-3">
-              <a href="http://mpowered.umich.edu" class="footer-logo mixpanel-tracked" type="mpowered-link" style="background-image: url(/img/MPoweredLogo-white-padded.png);"></a>
+              <a href="http://mpowered.umich.edu" class="footer-logo mixpanel-tracked" type="mpowered-link" style="background-image: url(./img/MPoweredLogo-white-padded.png);"></a>
             </div>
             <div class="col-md-3">
-              <a href="http://michiganhackers.com" class="footer-logo mixpanel-tracked" type="michiganhackers-link" style="background-image: url(/img/mhlogo-white.png);"></a>
+              <a href="http://michiganhackers.com" class="footer-logo mixpanel-tracked" type="michiganhackers-link" style="background-image: url(./img/mhlogo-white.png);"></a>
             </div>
           </div>
         </section>
       </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js"><\/script>')</script>
 
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/typeahead.bundle.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="//www.parsecdn.com/js/parse-1.2.18.min.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="http://www.parsecdn.com/js/parse-1.2.18.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="js/vendor/detectmobilebrowser.min.js"></script>
     <script src="js/vendor/viewport-units-buggyfill.min.js"></script>
     <script>window.viewportUnitsBuggyfill.init();</script>
     <script src="js/main.js"></script>
     <script src="js/registration.js"></script>
 
-    <!-- Google Analytics-->
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-52001814-1', 'mhacks.org');
-    ga('send', 'pageview');
-    </script>
-    <!-- Mixpanel -->
-    <script type="text/javascript">
-      mixpanel.track_links(".mixpanel-tracked", "page_interaction", function(e) {
-        return {
-          referrer: document.referrer,
-          type: $(e).attr("type"),
-          href: $(e).attr("href")
-        };
-      });
-    </script>
+   
     <div id="fixed-footer"></div>
   </body>
 </html>

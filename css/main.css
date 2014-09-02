@@ -176,7 +176,7 @@ html, body {
 }
 
 body {
-  /*background-image: url(/img/photos/big_house.jpg);*/
+  /*background-image: url(../img/photos/big_house.jpg);*/
   background-attachment: fixed; 
   background-size: cover;
   background-repeat: repeat;
@@ -247,8 +247,7 @@ body p {
   margin-top: -25px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(/img/mhacks_frame_light.png);
-
+  background-image: url(../img/mhacks_frame_light.png);
   -webkit-animation-name: wobble; 
   -webkit-animation-duration: 1s; 
   -webkit-animation-timing-function: ease-in-out;

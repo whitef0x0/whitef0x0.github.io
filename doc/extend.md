@@ -50,8 +50,8 @@ server or a CDN that hosts content that may not be present on every page of
 your site, for example) then you can queue up a domain name to be prefetched.
 
 ```html
-<link rel="dns-prefetch" href="//example.com">
-<link rel="dns-prefetch" href="//ajax.googleapis.com">
+<link rel="dns-prefetch" href="http://example.com">
+<link rel="dns-prefetch" href="http://ajax.googleapis.com">
 ```
 
 You can use as many of these as you need, but it's best if they are all
@@ -65,20 +65,20 @@ act on them ASAP.
 Amazon S3:
 
 ```html
-<link rel="dns-prefetch" href="//s3.amazonaws.com">
+<link rel="dns-prefetch" href="http://s3.amazonaws.com">
 ```
 
 Google APIs:
 
 ```html
-<link rel="dns-prefetch" href="//ajax.googleapis.com">
+<link rel="dns-prefetch" href="http://ajax.googleapis.com">
 ```
 
 Microsoft Ajax Content Delivery Network:
 
 ```html
-<link rel="dns-prefetch" href="//ajax.microsoft.com">
-<link rel="dns-prefetch" href="//ajax.aspnetcdn.com">
+<link rel="dns-prefetch" href="http://ajax.microsoft.com">
+<link rel="dns-prefetch" href="http://ajax.aspnetcdn.com">
 ```
 
 ### Browser support for DNS prefetching
