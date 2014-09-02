@@ -20,8 +20,8 @@
 //           '#360a09', 
 //           '#2a3628'];
 
-// // Document ready
-// $(function() {
+// Document ready
+$(function() {
 
 //   // Set a timeout...
 //     setTimeout(function(){
@@ -30,7 +30,7 @@
 //     }, 0);
 
 //   // initialize Parse
-//   Parse.initialize("Jv4oMEZT9VVdRnIeMahEOC3uv1IcCLNS4ecPQLyb", "TSE4c3WlSJYr4UAuSDlIhY45YE9Kwj46CF10yC0g");
+  Parse.initialize("Jv4oMEZT9VVdRnIeMahEOC3uv1IcCLNS4ecPQLyb", "TSE4c3WlSJYr4UAuSDlIhY45YE9Kwj46CF10yC0g");
 //   // scroll the window back to the top
 //   // $('html, body').scrollTop(0);
 
@@ -113,30 +113,30 @@
 //   //   runLogoAnimation(1000);
 //   //   });
 
-//   // initialize the schools list with typeahead
-//   var schools = new Bloodhound({
-//     datumTokenizer: Bloodhound.tokenizers.obj.whitespace('foo'),
-//     queryTokenizer: Bloodhound.tokenizers.whitespace,
-//     limit: 5,
-//     prefetch: {
-//       ttl: 0,
-//       thumbprint: "blah",
-//       url: './json/universities.json',
-//       filter: function(list) {
-//         return $.map(list, function(uni) { return { foo: uni }; });
-//       }
-//     }
-//   });
-//   schools.initialize();
-//   $('#school').typeahead({
-//     hint: false
-//   }, {
-//     displayKey: 'foo',
-//     source: schools.ttAdapter()
-//   });
-//   initialize();
-//   viewportUnitsBuggyfill.refresh();
-// });
+  // initialize the schools list with typeahead
+  var schools = new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.obj.whitespace('foo'),
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    limit: 5,
+    prefetch: {
+      ttl: 0,
+      thumbprint: "blah",
+      url: './json/universities.json',
+      filter: function(list) {
+        return $.map(list, function(uni) { return { foo: uni }; });
+      }
+    }
+  });
+  schools.initialize();
+  $('#school').typeahead({
+    hint: false
+  }, {
+    displayKey: 'foo',
+    source: schools.ttAdapter()
+  });
+  initialize();
+  viewportUnitsBuggyfill.refresh();
+});
 
 
 // // FOO
@@ -193,19 +193,19 @@
 // //   return offset;
 // // }
 
-// function validateEmail(email) {
-//   // jk I typed it out
-//   var re = new RegExp("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
-//   return re.test(email);
-//   // ...not
-// }
+function validateEmail(email) {
+  // jk I typed it out
+  var re = new RegExp("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
+  return re.test(email);
+  // ...not
+}
 
-// function daysBetween(date1, date2) {
-//   var oneDay = 24*60*60*1000;
-//   console.log(date1.getTime());
-//   console.log(date2.getTime());
-//   return Math.round(Math.abs((date1.getTime() - date2.getTime())/(oneDay)));
-// }
+function daysBetween(date1, date2) {
+  var oneDay = 24*60*60*1000;
+  console.log(date1.getTime());
+  console.log(date2.getTime());
+  return Math.round(Math.abs((date1.getTime() - date2.getTime())/(oneDay)));
+}
 
 // // Reset the drawing before starting
 // function resetPathDrawing(path) {

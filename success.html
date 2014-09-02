@@ -39,29 +39,18 @@ Made with love by the MHacks Tech "Do you even hack, bro?" Team
 <!--   <link rel="stylesheet" href="css/main.css"> -->
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-  <!-- start Mixpanel --><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
-for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="http://cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
-mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
+ 
   </head>
   <body> 
-    <div id="loading-curtain" class="fade-animated locked">
-      <div class="loading-icon"></div>
-    </div>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&appId=567361250010506&version=v2.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    
+
       <div id="main-container" class="container fade-animated">
         <section id="success">
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
               <h3>Awesome! Now, check your email.</h3>
               <p>In order to complete the application process, please verify your email address by clicking the link that we've sent to your email.</p>
-              <p>If you haven't received the email, please contact us at <a href="mailto:hackathon@umich.edu" style="font-family: 'Roboto';">hackathon@umich.edu</a>.
+              <p>If you haven't received the email, please contact us at <a href="mailto:micro@nwhacks.com" style="font-family: 'Roboto';">micro@nwhacks.com</a>.
             </div>
           </div>
         </section>
@@ -80,26 +69,7 @@ mixpanel.init("cdc2b7170091990b82c91dc27da8c7a5");</script><!-- end Mixpanel -->
     <script src="js/vendor/viewport-units-buggyfill.min.js"></script>
     <script>window.viewportUnitsBuggyfill.init();</script>
 
-    <!-- Google Analytics-->
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-52001814-1', 'mhacks.org');
-    ga('send', 'pageview');
-    </script>
-    <!-- Mixpanel -->
-    <script type="text/javascript">
-      mixpanel.track_links(".mixpanel-tracked", "page_interaction", function(e) {
-        return {
-          referrer: document.referrer,
-          type: $(e).attr("type"),
-          href: $(e).attr("href")
-        };
-      });
-    </script>
+  
     <div id="fixed-footer"></div>
   </body>
 </html>
