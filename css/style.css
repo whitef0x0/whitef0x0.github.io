@@ -2034,8 +2034,8 @@ header.sponsor-header {
   background-image: url("../img/micro/background_image1.jpg");
   background-position: center;
   background-size: cover;
-  max-height: 90%;
-  height: 700px;
+  /*max-height: 90%;*/
+  height: 400px;
   padding: 0;
   overflow: hidden; }
   @media (max-width: 1024px) {
