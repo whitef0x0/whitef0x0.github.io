@@ -134,7 +134,6 @@ $(function() {
     displayKey: 'foo',
     source: schools.ttAdapter()
   });
-  initialize();
   viewportUnitsBuggyfill.refresh();
 });
 
