@@ -2137,7 +2137,7 @@ header.sponsor-header {
   overflow: hidden;
   position: relative; }
   #micro-intro * {
-    position: relative;
+    position: relative!important;
     z-index: 20; }
   #micro-intro .logo {
     text-align: center;
