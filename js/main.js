@@ -23,16 +23,16 @@
 // Document ready
 $(function() {
 
-//   // Set a timeout...
-//     setTimeout(function(){
-//         // Hide the address bar!
-//         window.scrollTo(0, 1);
-//     }, 0);
+  // Set a timeout...
+   setTimeout(function(){       
+  // Hide the address bar!
+      window.scrollTo(0, 1);
+    }, 0);
 
 //   // initialize Parse
   Parse.initialize("Jv4oMEZT9VVdRnIeMahEOC3uv1IcCLNS4ecPQLyb", "TSE4c3WlSJYr4UAuSDlIhY45YE9Kwj46CF10yC0g");
-//   // scroll the window back to the top
-//   // $('html, body').scrollTop(0);
+// scroll the window back to the top
+ $('html, body').scrollTop(0);
 
 //   // // set the upload trigger on the button
 //   // $("#faq-see-more").on('click', function(e) {
