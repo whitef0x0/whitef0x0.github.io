@@ -1,6 +1,5 @@
 // On page load...
 $(function() {
-    Parse.initialize("Jv4oMEZT9VVdRnIeMahEOC3uv1IcCLNS4ecPQLyb", "TSE4c3WlSJYr4UAuSDlIhY45YE9Kwj46CF10yC0g");
 
   // Set a listener for the experienced_hacker radio buttons
   // $('section#apply input[name=experienced_hacker]').change(function() {
@@ -39,8 +38,8 @@ $(function() {
     var user = new Parse.User();
     user.signUp(data, {
       success: function(user) {
-        window.alert("Thanks for your application! Please check your email to confirm your address.");
-        //window.location = "./success.html"
+        //window.alert("Thanks for your application! Please check your email to confirm your address.");
+        window.location = "./success.html"
         $('#submit').button('reset');
       },
       error: function(user, error) {
