@@ -1,4 +1,4 @@
-mhacksIV
-========
+nwHacks Micro
+=============
 
-The launch site for MHacks IV
+The launch site for nwHacks Micro
