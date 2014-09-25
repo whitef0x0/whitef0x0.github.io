@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name>nwHacks Micro Map</name>
+		<description><![CDATA[nthnsh]]></description>
+		<Folder>
+			<name>Untitled layer</name>
+		</Folder>
+		<Folder>
+			<name>Untitled layer</name>
+			<Placemark>
+				<styleUrl>#poly-000000-1-76</styleUrl>
+				<name>nwHacks Micro</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>-123.2485718,49.2609135,0.0 -123.2487354,49.2611148,0.0 -123.24879710000002,49.2611918,0.0 -123.2492396,49.2610553,0.0 -123.2489955,49.2607612,0.0 -123.2485718,49.2609135,0.0</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>Official Entrance</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.2486013,49.260959,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-C6A4CF</styleUrl>
+				<name>Reboot Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[Bottom Floor]]></description>
+				<Point>
+					<coordinates>-123.2487166,49.2609363,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-000000</styleUrl>
+				<name>Elevator</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.2488534,49.2610343,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-C6A4CF</styleUrl>
+				<name>ICCSX250 and ICCSX260</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[2nd Floor]]></description>
+				<Point>
+					<coordinates>-123.2488346,49.2611358,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>Entrance 1</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>-123.2486254,49.2608767,0.0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Untitled layer</name>
+		</Folder>
+		<Style id='icon-503-000000'>
+			<IconStyle>
+				<color>ff000000</color>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id='icon-503-C6A4CF'>
+			<IconStyle>
+				<color>ffCFA4C6</color>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id='icon-503-DB4436'>
+			<IconStyle>
+				<color>ff3644DB</color>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id='poly-000000-1-76'>
+			<LineStyle>
+				<color>ff000000</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>4C000000</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+	</Document>
+</kml>
