@@ -378,7 +378,7 @@ td,
 th {
   padding: 0; }
 
-#schedule h2, #schedule h3, #schedule h4, #apply h2, #apply h3, #apply h4 {
+section h2, h3, h4 {
   text-align: center;
 }
 
