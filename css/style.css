@@ -373,7 +373,7 @@ td,
 th {
   padding: 0; }
 
-#schedule h4 {
+#schedule h2 h3 h4, #apply h2 h3 h4 {
   text-align: center;
 }
 
