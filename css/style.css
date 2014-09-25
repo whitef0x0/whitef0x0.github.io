@@ -364,6 +364,39 @@ td,
 th {
   padding: 0; }
 
+#schedule h4 {
+  text-align: center;
+}
+
+.schedule-table {
+  margin: auto;
+  text-align: left;
+  margin-bottom: 50px;
+  width: 600px;
+}
+
+@media (max-width: 600px) {
+  .schedule-table {
+    width: 80%;
+  }
+}
+
+.schedule-table td small {
+  display: block;
+}
+
+.schedule-table td, .schedule-table th {
+  padding: 10px;
+}
+
+.schedule-table tr {
+  border-bottom: 1px solid #ccc;
+}
+
+.schedule-table tbody tr:last-child {
+  border-bottom: none;
+}
+
 /* Headings
    ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
