@@ -68,6 +68,15 @@ audio:not([controls]) {
 template {
   display: none; }
 
+
+/*Buttons
+*
+*/
+.button-bar {
+  z-index: 999;
+  position: relative;
+  padding-top: 280px;
+}
 /* Links
    ========================================================================== */
 /**
