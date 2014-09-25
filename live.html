@@ -192,11 +192,11 @@
    <script>    
  
       function init_map() {
-        var var_location = new google.maps.LatLng(49.2613107,-123.2487824);
+        var location = new google.maps.LatLng(49.2613107,-123.2487824);
  
-        var var_mapoptions = {
-          center: var_location,
-          zoom: 20
+        var mapoptions = {
+          center: location,
+          zoom: 15
         };
         
 
@@ -205,7 +205,7 @@
         //     map: var_map,
         //     title:"nwHacks Micro"});
  
-        var var_map = new google.maps.Map(document.getElementById("map-container"), var_mapoptions);
+        var map = new google.maps.Map(document.getElementById("map-container"), mapoptions);
         
         var hackathonLayer = new google.maps.KmlLayer({
           url: '/iccs.kml'
