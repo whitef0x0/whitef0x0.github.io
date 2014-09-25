@@ -1,10 +1,6 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -23,6 +19,38 @@ html {
     line-height: 1.4;
 }
 
+#schedule h4 {
+  text-align: center;
+}
+
+.schedule-table {
+  margin: auto;
+  text-align: left;
+  margin-bottom: 50px;
+  width: 600px;
+}
+
+@media (max-width: 600px) {
+  .schedule-table {
+    width: 80%;
+  }
+}
+
+.schedule-table td small {
+  display: block;
+}
+
+.schedule-table td, .schedule-table th {
+  padding: 10px;
+}
+
+.schedule-table tr {
+  border-bottom: 1px solid #ccc;
+}
+
+.schedule-table tbody tr:last-child {
+  border-bottom: none;
+}
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
