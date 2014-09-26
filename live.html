@@ -96,10 +96,26 @@
     <div class="grey-triangle-left"><img src="img/micro/grey-triangle-left.png" alt=""></div>
   </section>
       <section id="map">
+      
         <h2 class="text-center">Map</h2>
-        <div id="map-container">
-          
+        <div class="row" id="map-container">
         </div>
+        
+        <div class="row">
+          <div class="col-md-3 col-md-offset-3">
+            <address>
+              <strong>ICCSX250 and ICCSX260</strong><br>
+              ICICS Building UBC<br>
+              2366 Main Mall<br>
+              Vancouver, BC V6T1Z4<br>
+            </address>
+          </div>
+          <div class="col-md-3">
+            Floorplan maps of ICICS <a href="https://www.cs.ubc.ca/our-department/maps">available here</a><br>
+            Maps of ICICS in UBC <a href="http://www.maps.ubc.ca/PROD/index_detail.php?show=y,n,n,n,n,y&bldg2Search=n&locat1=166&locat2=#showMapCampus">available here</a>
+          </div>
+        </div>
+        
       </section>
       <section id="schedule" style="padding-top:50px">
         <h2>Schedule</h2>
@@ -196,14 +212,9 @@
  
         var mapoptions = {
           center: location,
-          zoom: 18
+          zoom: 19
         };
-        
 
-        // var var_marker = new google.maps.Marker({
-        //     position: var_location,
-        //     map: var_map,
-        //     title:"nwHacks Micro"});
  
         var map = new google.maps.Map(document.getElementById("map-container"), mapoptions);
         
